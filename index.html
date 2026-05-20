@@ -1,60 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mapa de Empresas y Riesgos Ambientales (Preliminar)</title>
-
-  https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
-  ./css/styles.css
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Mapa de Riesgos Ambientales – México</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand">
-      <div class="title">Mapa de Empresas y Riesgos Ambientales</div>
-      <div class="subtitle">Preliminar · CDMX/EDOMEX · Monterrey · GDL</div>
-    </div>
 
+  <div id="topbar">
+    <h1>🌎 Mapa de Riesgos Ambientales<span>ZMM · CDMX-EDOMEX · AMG</span></h1>
     <div class="controls">
-      <input id="search" type="search" placeholder="Buscar empresa / región / contaminante..." />
-      <select id="region">
-        <option value="all">Todas las regiones</option>
-        <option value="CDMX/EDOMEX">CDMX/EDOMEX</option>
-        <option value="Monterrey (ZMM/ZMM)">Monterrey</option>
-        <option value="Guadalajara (AMG)">Guadalajara (AMG)</option>
+      <input id="search" type="text" placeholder="Buscar empresa, sector…">
+      <select id="filterRegion">
+        <option value="">Todas las regiones</option>
+        <option value="ZMM">ZMM – Monterrey</option>
+        <option value="CDMX-EDOMEX">CDMX-EDOMEX</option>
+        <option value="AMG">AMG – Guadalajara</option>
       </select>
-      <select id="medium">
-        <option value="all">Aire / Agua / Ruido</option>
-        <option value="air">Aire</option>
-        <option value="water">Agua</option>
-        <option value="noise">Ruido</option>
+      <select id="filterMedium">
+        <option value="">Todos los medios</option>
+        <option value="air">💨 Aire</option>
+        <option value="water">💧 Agua</option>
+        <option value="noise">🔊 Ruido</option>
       </select>
-      <button id="reset">Reset</button>
+      <button id="resetBtn">↺ Reset</button>
     </div>
-  </header>
+  </div>
 
-  <main class="layout">
-    <aside class="sidebar">
-      <div class="panel">
-        <div class="panel-title">Listado</div>
-        <div id="stats" class="stats"></div>
-        <div id="list" class="list"></div>
-      </div>
-      <div class="panel">
-        <div class="panel-title">Notas</div>
-        <p class="muted">
-          Los puntos sin coordenadas aparecen en el listado, pero no se pintan en el mapa.
-          Añade <code>lat</code>/<code>lng</code> en <code>data/empresas.json</code> para activarlos.
-        </p>
-      </div>
-    </aside>
+  <div id="main">
+    <div id="sidebar">
+      <div id="stats"></div>
+      <div id="list"></div>
+    </div>
+    <div id="map"></div>
+  </div>
 
-    <section class="map-wrap">
-      <div id="map"></div>
-    </section>
-  </main>
-
-  https://unpkg.com/leaflet@1.9.4/dist/leaflet.jsscript>
-  ./js/app.jsscript>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
