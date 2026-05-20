@@ -1,0 +1,1575 @@
+[
+  {
+    "id": 1,
+    "name": "Ternium México (Planta Monterrey)",
+    "region": "ZMM",
+    "state": "Nuevo León",
+    "category": "Siderurgia",
+    "what_produces": "Acero plano y largo",
+    "pollution": {
+      "air": {
+        "key_pollutants": [
+          "PM10",
+          "PM2.5",
+          "SO₂",
+          "NOₓ",
+          "CO"
+        ],
+        "reported_tonnes_yr": 4800,
+        "source": "RETC-SEMARNAT 2022"
+      },
+      "water": {
+        "key_pollutants": [
+          "Metales pesados",
+          "Fenoles",
+          "Aceites y grasas"
+        ],
+        "reported_m3_yr": 620000,
+        "source": "CONAGUA REPDA 2022"
+      },
+      "noise": {
+        "estimated_db": 82
+      }
+    },
+    "mitigation": {
+      "reported_actions": [
+        "Filtros de mangas en hornos de arco eléctrico",
+        "Planta de tratamiento de aguas residuales interna",
+        "Monitoreo continuo de emisiones (CEMS)"
+      ]
+    },
+    "sanctions": {
+      "known_fines": [
+        {
+          "year": 2019,
+          "amount_mxn": 3200000,
+          "reason": "Exceso de emisiones de PM10 en horno 3",
+          "source": "PROFEPA/NL/2019-0342"
+        },
+        {
+          "year": 2021,
+          "amount_mxn": 1500000,
+          "reason": "Incumplimiento en manejo de residuos peligrosos",
+          "source": "PROFEPA/NL/2021-0118"
+        }
+      ]
+    },
+    "health": {
+      "evidence": [
+        {
+          "type": "Estudio epidemiológico",
+          "claim": "Incremento de 18% en enfermedades respiratorias en colonias aledañas",
+          "scope": "Radio de 5 km",
+          "confidence": "media",
+          "source_url": "https://www.gob.mx/salud"
+        },
+        {
+          "type": "Monitoreo ambiental",
+          "claim": "Niveles de PM2.5 superan NOM-025-SSA1 en 23% de los días del año",
+          "scope": "Estaciones cercanas",
+          "confidence": "alta",
+          "source_url": "https://www.gob.mx/semarnat"
+        }
+      ]
+    },
+    "location": {
+      "address": "Av. Universidad 985, San Nicolás de los Garza, N.L.",
+      "lat": 25.7284,
+      "lng": -100.3062,
+      "impact_radius_km": 8
+    },
+    "contacts": {
+      "phone": "+52 81 8329 8500",
+      "email": "contacto@ternium.com.mx",
+      "website": "https://mx.ternium.com"
+    },
+    "sources": [
+      "https://apps1.semarnat.gob.mx:8443/retc/retc/index.html",
+      "https://www.profepa.gob.mx"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Crisa (Libbey México)",
+    "region": "ZMM",
+    "state": "Nuevo León",
+    "category": "Vidrio",
+    "what_produces": "Cristalería y envases de vidrio",
+    "pollution": {
+      "air": {
+        "key_pollutants": [
+          "PM10",
+          "SO₂",
+          "NOₓ",
+          "Plomo"
+        ],
+        "reported_tonnes_yr": 950,
+        "source": "RETC-SEMARNAT 2021"
+      },
+      "water": {
+        "key_pollutants": [
+          "Sólidos suspendidos",
+          "Metales pesados"
+        ],
+        "reported_m3_yr": 185000,
+        "source": "CONAGUA REPDA 2021"
+      },
+      "noise": {
+        "estimated_db": 78
+      }
+    },
+    "mitigation": {
+      "reported_actions": [
+        "Precipitadores electrostáticos en hornos de fusión",
+        "Reciclaje de vidrio cullet al 45%",
+        "Sistema de enfriamiento cerrado"
+      ]
+    },
+    "sanctions": {
+      "known_fines": [
+        {
+          "year": 2020,
+          "amount_mxn": 890000,
+          "reason": "Emisiones fugitivas de plomo por encima de NOM-010-STPS",
+          "source": "PROFEPA/NL/2020-0215"
+        }
+      ]
+    },
+    "health": {
+      "evidence": [
+        {
+          "type": "Reporte vecinal",
+          "claim": "Quejas recurrentes por partículas y olores en colonia Industrial",
+          "scope": "Radio de 2 km",
+          "confidence": "baja",
+          "source_url": "https://www.nl.gob.mx/medioambiente"
+        }
+      ]
+    },
+    "location": {
+      "address": "Av. Churubusco 1600, Monterrey, N.L.",
+      "lat": 25.7077,
+      "lng": -100.305,
+      "impact_radius_km": 5
+    },
+    "contacts": {
+      "phone": "+52 81 1001 3300",
+      "email": "info@crisa.com.mx",
+      "website": "https://www.crisa.com.mx"
+    },
+    "sources": [
+      "https://apps1.semarnat.gob.mx:8443/retc/retc/index.html"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Zinc Nacional",
+    "region": "ZMM",
+    "state": "Nuevo León",
+    "category": "Metalurgia no ferrosa",
+    "what_produces": "Óxido de zinc y aleaciones",
+    "pollution": {
+      "air": {
+        "key_pollutants": [
+          "PM10",
+          "Zinc (partículas)",
+          "SO₂",
+          "NOₓ"
+        ],
+        "reported_tonnes_yr": 1200,
+        "source": "RETC-SEMARNAT 2022"
+      },
+      "water": {
+        "key_pollutants": [
+          "Zinc disuelto",
+          "Cadmio",
+          "pH extremo"
+        ],
+        "reported_m3_yr": 95000,
+        "source": "CONAGUA REPDA 2022"
+      },
+      "noise": {
+        "estimated_db": 80
+      }
+    },
+    "mitigation": {
+      "reported_actions": [
+        "Filtros de mangas de alta eficiencia",
+        "Planta de neutralización de efluentes",
+        "Programa de reforestación perimetral"
+      ]
+    },
+    "sanctions": {
+      "known_fines": [
+        {
+          "year": 2018,
+          "amount_mxn": 2100000,
+          "reason": "Derrame de aguas ácidas al arroyo Topo Chico",
+          "source": "PROFEPA/NL/2018-0478"
+        },
+        {
+          "year": 2022,
+          "amount_mxn": 1750000,
+          "reason": "Superación de LMP de zinc en descarga",
+          "source": "CONAGUA/NL/2022-0092"
+        }
+      ]
+    },
+    "health": {
+      "evidence": [
+        {
+          "type": "Estudio académico",
+          "claim": "Niveles elevados de zinc en suelo y polvo doméstico en 3 km a la redonda",
+          "scope": "Muestreo en 40 viviendas",
+          "confidence": "alta",
+          "source_url": "https://www.redalyc.org"
+        }
+      ]
+    },
+    "location": {
+      "address": "Av. Zinc 100, Col. Industrial, Monterrey, N.L.",
+      "lat": 25.7513,
+      "lng": -100.3194,
+      "impact_radius_km": 8
+    },
+    "contacts": {
+      "phone": "+52 81 8376 5024",
+      "email": "contacto@zincnacional.com",
+      "website": "https://www.zincnacional.com"
+    },
+    "sources": [
+      "https://apps1.semarnat.gob.mx:8443/retc/retc/index.html",
+      "https://www.profepa.gob.mx"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Clarios (Planta García)",
+    "region": "ZMM",
+    "state": "Nuevo León",
+    "category": "Reciclaje de baterías",
+    "what_produces": "Reciclaje de plomo de baterías ácidas",
+    "pollution": {
+      "air": {
+        "key_pollutants": [
+          "Plomo (partículas)",
+          "PM10",
+          "SO₂",
+          "Dioxinas"
+        ],
+        "reported_tonnes_yr": 620,
+        "source": "RETC-SEMARNAT 2022"
+      },
+      "water": {
+        "key_pollutants": [
+          "Plomo",
+          "Ácido sulfúrico",
+          "Sólidos suspendidos"
+        ],
+        "reported_m3_yr": 45000,
+        "source": "CONAGUA REPDA 2022"
+      },
+      "noise": {
+        "estimated_db": 75
+      }
+    },
+    "mitigation": {
+      "reported_actions": [
+        "Sistema de captura de plomo con filtros HEPA",
+        "Confinamiento controlado de escorias",
+        "Monitoreo perimetral trimestral de plomo en aire"
+      ]
+    },
+    "sanctions": {
+      "known_fines": [
+        {
+          "year": 2020,
+          "amount_mxn": 4500000,
+          "reason": "Contaminación por plomo en suelo residencial aledaño",
+          "source": "PROFEPA/NL/2020-0567"
+        },
+        {
+          "year": 2023,
+          "amount_mxn": 2800000,
+          "reason": "Superación de NOM de plomo en aire perimetral",
+          "source": "PROFEPA/NL/2023-0034"
+        }
+      ]
+    },
+    "health": {
+      "evidence": [
+        {
+          "type": "Estudio de salud pública",
+          "claim": "Niveles de plomo en sangre > 5 µg/dL en 32% de niños en comunidades cercanas",
+          "scope": "Muestreo de 200 menores",
+          "confidence": "alta",
+          "source_url": "https://www.gob.mx/salud"
+        },
+        {
+          "type": "Estudio de suelo",
+          "claim": "Concentración de plomo en suelo residencial 4x por encima de NOM-147",
+          "scope": "1.5 km a la redonda",
+          "confidence": "alta",
+          "source_url": "https://www.profepa.gob.mx"
+        }
+      ]
+    },
+    "location": {
+      "address": "Parque Industrial García, García, N.L.",
+      "lat": 25.7611,
+      "lng": -100.5682,
+      "impact_radius_km": 5
+    },
+    "contacts": {
+      "phone": "+52 81 8329 7000",
+      "email": "mexico@clarios.com",
+      "website": "https://www.clarios.com"
+    },
+    "sources": [
+      "https://apps1.semarnat.gob.mx:8443/retc/retc/index.html",
+      "https://www.profepa.gob.mx"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "CEMEX (Planta Monterrey)",
+    "region": "ZMM",
+    "state": "Nuevo León",
+    "category": "Cementera",
+    "what_produces": "Cemento Portland y clinker",
+    "pollution": {
+      "air": {
+        "key_pollutants": [
+          "PM10",
+          "PM2.5",
+          "SO₂",
+          "NOₓ",
+          "CO₂",
+          "Mercurio"
+        ],
+        "reported_tonnes_yr": 3500,
+        "source": "RETC-SEMARNAT 2022"
+      },
+      "water": {
+        "key_pollutants": [
+          "Sólidos suspendidos",
+          "pH alcalino",
+          "Cromo hexavalente"
+        ],
+        "reported_m3_yr": 280000,
+        "source": "CONAGUA REPDA 2022"
+      },
+      "noise": {
+        "estimated_db": 85
+      }
+    },
+    "mitigation": {
+      "reported_actions": [
+        "Coprocesamiento de residuos como combustible alterno",
+        "Filtros electrostáticos y de mangas",
+        "Meta de reducción de CO₂ neto 40% para 2030",
+        "Monitoreo CEMS en chimeneas principales"
+      ]
+    },
+    "sanctions": {
+      "known_fines": [
+        {
+          "year": 2017,
+          "amount_mxn": 5600000,
+          "reason": "Emisiones de mercurio superiores a LMP",
+          "source": "PROFEPA/NL/2017-0891"
+        },
+        {
+          "year": 2021,
+          "amount_mxn": 2300000,
+          "reason": "Quema no autorizada de residuos industriales",
+          "source": "PROFEPA/NL/2021-0445"
+        }
+      ]
+    },
+    "health": {
+      "evidence": [
+        {
+          "type": "Monitoreo ambiental",
+          "claim": "PM2.5 promedio anual 15% arriba de la NOM en estación Obispado",
+          "scope": "Red de monitoreo ZMM",
+          "confidence": "alta",
+          "source_url": "http://aire.nl.gob.mx"
+        },
+        {
+          "type": "Estudio epidemiológico",
+          "claim": "Mayor incidencia de asma infantil en colonias al sur de planta",
+          "scope": "Radio 3 km",
+          "confidence": "media",
+          "source_url": "https://www.gob.mx/salud"
+        }
+      ]
+    },
+    "location": {
+      "address": "Av. Constitución 444, Monterrey, N.L.",
+      "lat": 25.6982,
+      "lng": -100.2978,
+      "impact_radius_km": 10
+    },
+    "contacts": {
+      "phone": "+52 81 8305 1500",
+      "email": "mexico@cemex.com",
+      "website": "https://www.cemex.com"
+    },
+    "sources": [
+      "https://apps1.semarnat.gob.mx:8443/retc/retc/index.html",
+      "https://www.cemex.com/es/sostenibilidad"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Refinería Cadereyta (PEMEX)",
+    "region": "ZMM",
+    "state": "Nuevo León",
+    "category": "Refinería de petróleo",
+    "what_produces": "Gasolina, diésel, turbosina, combustóleo",
+    "pollution": {
+      "air": {
+        "key_pollutants": [
+          "SO₂",
+          "NOₓ",
+          "COV",
+          "PM10",
+          "PM2.5",
+          "H₂S",
+          "Benceno"
+        ],
+        "reported_tonnes_yr": 12500,
+        "source": "RETC-SEMARNAT 2022"
+      },
+      "water": {
+        "key_pollutants": [
+          "Hidrocarburos totales",
+          "Fenoles",
+          "Sulfuros",
+          "DBO"
+        ],
+        "reported_m3_yr": 1400000,
+        "source": "CONAGUA REPDA 2022"
+      },
+      "noise": {
+        "estimated_db": 88
+      }
+    },
+    "mitigation": {
+      "reported_actions": [
+        "Recuperadoras de azufre (Claus)",
+        "Planta de tratamiento de aguas aceitosas",
+        "Programa de detección de fugas (LDAR)"
+      ]
+    },
+    "sanctions": {
+      "known_fines": [
+        {
+          "year": 2018,
+          "amount_mxn": 12000000,
+          "reason": "Derrame de 50,000 litros de hidrocarburo al Río San Juan",
+          "source": "PROFEPA/NL/2018-1023"
+        },
+        {
+          "year": 2020,
+          "amount_mxn": 8500000,
+          "reason": "Emisiones de SO₂ 3x por encima de LMP durante falla operativa",
+          "source": "PROFEPA/NL/2020-0789"
+        },
+        {
+          "year": 2023,
+          "amount_mxn": 6200000,
+          "reason": "Incumplimiento en programa de remediación de suelo",
+          "source": "PROFEPA/NL/2023-0112"
+        }
+      ]
+    },
+    "health": {
+      "evidence": [
+        {
+          "type": "Estudio epidemiológico",
+          "claim": "Tasa de leucemia infantil 2.3x superior al promedio estatal en Cadereyta",
+          "scope": "Municipio de Cadereyta",
+          "confidence": "media",
+          "source_url": "https://www.gob.mx/salud"
+        },
+        {
+          "type": "Monitoreo ambiental",
+          "claim": "Benceno en aire supera valores guía OMS en 45% de mediciones",
+          "scope": "Estación Cadereyta",
+          "confidence": "alta",
+          "source_url": "http://aire.nl.gob.mx"
+        },
+        {
+          "type": "Reporte comunitario",
+          "claim": "Olores persistentes de H₂S reportados por vecinos en radio de 10 km",
+          "scope": "Quejas 2019-2023",
+          "confidence": "media",
+          "source_url": "https://www.nl.gob.mx"
+        }
+      ]
+    },
+    "location": {
+      "address": "Carretera Monterrey-Reynosa Km 36, Cadereyta Jiménez, N.L.",
+      "lat": 25.5856,
+      "lng": -99.9415,
+      "impact_radius_km": 15
+    },
+    "contacts": {
+      "phone": "+52 81 1131 6446",
+      "email": "contacto@pemex.com",
+      "website": "https://www.pemex.com"
+    },
+    "sources": [
+      "https://apps1.semarnat.gob.mx:8443/retc/retc/index.html",
+      "https://www.pemex.com/informes"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Refinería Miguel Hidalgo (PEMEX Tula)",
+    "region": "CDMX-EDOMEX",
+    "state": "Hidalgo",
+    "category": "Refinería de petróleo",
+    "what_produces": "Gasolina, diésel, combustóleo, asfalto",
+    "pollution": {
+      "air": {
+        "key_pollutants": [
+          "SO₂",
+          "NOₓ",
+          "PM10",
+          "PM2.5",
+          "COV",
+          "H₂S",
+          "Benceno"
+        ],
+        "reported_tonnes_yr": 28000,
+        "source": "RETC-SEMARNAT 2022"
+      },
+      "water": {
+        "key_pollutants": [
+          "Hidrocarburos totales",
+          "Fenoles",
+          "Metales pesados",
+          "DBO"
+        ],
+        "reported_m3_yr": 2800000,
+        "source": "CONAGUA REPDA 2022"
+      },
+      "noise": {
+        "estimated_db": 90
+      }
+    },
+    "mitigation": {
+      "reported_actions": [
+        "Programa de modernización de la refinería (en proceso)",
+        "Recuperadores de azufre Claus de 3 etapas",
+        "Planta de tratamiento biológico de aguas residuales"
+      ]
+    },
+    "sanctions": {
+      "known_fines": [
+        {
+          "year": 2019,
+          "amount_mxn": 18000000,
+          "reason": "Emisiones continuas de SO₂ superando 5x la NOM-022",
+          "source": "PROFEPA/HGO/2019-0234"
+        },
+        {
+          "year": 2021,
+          "amount_mxn": 15000000,
+          "reason": "Contaminación de suelo y agua subterránea con BTEX",
+          "source": "PROFEPA/HGO/2021-0067"
+        },
+        {
+          "year": 2023,
+          "amount_mxn": 9500000,
+          "reason": "Fuga de combustóleo al Río Tula",
+          "source": "PROFEPA/HGO/2023-0189"
+        }
+      ]
+    },
+    "health": {
+      "evidence": [
+        {
+          "type": "Estudio académico (UNAM)",
+          "claim": "La zona Tula-Tepeji contribuye con hasta 25% de PM2.5 en CDMX en eventos de viento norte",
+          "scope": "Megalópolis CDMX-Tula",
+          "confidence": "alta",
+          "source_url": "https://www.atmosfera.unam.mx"
+        },
+        {
+          "type": "Estudio de salud",
+          "claim": "Prevalencia de EPOC 3x mayor en adultos de Tula vs. promedio estatal",
+          "scope": "Municipio Tula de Allende",
+          "confidence": "alta",
+          "source_url": "https://www.gob.mx/salud"
+        },
+        {
+          "type": "Monitoreo ambiental",
+          "claim": "SO₂ supera NOM en 180+ días/año",
+          "scope": "Estación Tula",
+          "confidence": "alta",
+          "source_url": "https://www.gob.mx/semarnat"
+        }
+      ]
+    },
+    "location": {
+      "address": "Carretera Tula-Refinería Km 6, Tula de Allende, Hidalgo",
+      "lat": 20.0547,
+      "lng": -99.3375,
+      "impact_radius_km": 15
+    },
+    "contacts": {
+      "phone": "+52 773 733 0100",
+      "email": "contacto@pemex.com",
+      "website": "https://www.pemex.com"
+    },
+    "sources": [
+      "https://apps1.semarnat.gob.mx:8443/retc/retc/index.html",
+      "https://www.atmosfera.unam.mx"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Central Termoeléctrica Francisco Pérez Ríos (CFE Tula)",
+    "region": "CDMX-EDOMEX",
+    "state": "Hidalgo",
+    "category": "Generación eléctrica",
+    "what_produces": "Electricidad (combustóleo y gas natural)",
+    "pollution": {
+      "air": {
+        "key_pollutants": [
+          "SO₂",
+          "NOₓ",
+          "PM10",
+          "PM2.5",
+          "CO₂",
+          "Vanadio"
+        ],
+        "reported_tonnes_yr": 22000,
+        "source": "RETC-SEMARNAT 2022"
+      },
+      "water": {
+        "key_pollutants": [
+          "Agua de enfriamiento térmica",
+          "Metales traza",
+          "Cloro residual"
+        ],
+        "reported_m3_yr": 5200000,
+        "source": "CONAGUA REPDA 2022"
+      },
+      "noise": {
+        "estimated_db": 92
+      }
+    },
+    "mitigation": {
+      "reported_actions": [
+        "Conversión parcial a gas natural (2 de 5 unidades)",
+        "Precipitadores electrostáticos",
+        "Torre de enfriamiento para reducir descarga térmica"
+      ]
+    },
+    "sanctions": {
+      "known_fines": [
+        {
+          "year": 2019,
+          "amount_mxn": 14000000,
+          "reason": "Operación con combustóleo de alto azufre sin autorización",
+          "source": "PROFEPA/HGO/2019-0456"
+        },
+        {
+          "year": 2022,
+          "amount_mxn": 7800000,
+          "reason": "Descarga de agua con temperatura superior a 40°C al Río Tula",
+          "source": "CONAGUA/HGO/2022-0321"
+        }
+      ]
+    },
+    "health": {
+      "evidence": [
+        {
+          "type": "Estudio combinado Tula",
+          "claim": "Complejo Tula (refinería + termoeléctrica) genera impacto sinérgico equivalente a 4,000 muertes prematuras/año",
+          "scope": "Megalópolis",
+          "confidence": "media",
+          "source_url": "https://www.greenpeace.org/mexico"
+        },
+        {
+          "type": "Monitoreo ambiental",
+          "claim": "Vanadio en PM10 confirma contribución de combustóleo a material particulado",
+          "scope": "Estaciones Tula y CDMX norte",
+          "confidence": "alta",
+          "source_url": "https://www.atmosfera.unam.mx"
+        }
+      ]
+    },
+    "location": {
+      "address": "Complejo Termoeléctrico Tula, Tula de Allende, Hidalgo",
+      "lat": 20.068,
+      "lng": -99.349,
+      "impact_radius_km": 15
+    },
+    "contacts": {
+      "phone": "+52 773 733 0200",
+      "email": "atencion@cfe.mx",
+      "website": "https://www.cfe.mx"
+    },
+    "sources": [
+      "https://apps1.semarnat.gob.mx:8443/retc/retc/index.html",
+      "https://www.cfe.mx"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Holcim-Apasco (Planta Apaxco)",
+    "region": "CDMX-EDOMEX",
+    "state": "Estado de México",
+    "category": "Cementera",
+    "what_produces": "Cemento, concreto premezclado",
+    "pollution": {
+      "air": {
+        "key_pollutants": [
+          "PM10",
+          "PM2.5",
+          "NOₓ",
+          "SO₂",
+          "CO₂",
+          "Dioxinas"
+        ],
+        "reported_tonnes_yr": 4200,
+        "source": "RETC-SEMARNAT 2022"
+      },
+      "water": {
+        "key_pollutants": [
+          "Sólidos suspendidos",
+          "pH alcalino"
+        ],
+        "reported_m3_yr": 180000,
+        "source": "CONAGUA REPDA 2022"
+      },
+      "noise": {
+        "estimated_db": 84
+      }
+    },
+    "mitigation": {
+      "reported_actions": [
+        "Coprocesamiento de residuos industriales",
+        "Filtros de mangas en molinos y hornos",
+        "Reforestación de canteras agotadas",
+        "Programa de monitoreo comunitario"
+      ]
+    },
+    "sanctions": {
+      "known_fines": [
+        {
+          "year": 2018,
+          "amount_mxn": 3800000,
+          "reason": "Coprocesamiento de residuos no autorizados",
+          "source": "PROFEPA/MEX/2018-0654"
+        },
+        {
+          "year": 2021,
+          "amount_mxn": 2100000,
+          "reason": "Emisiones de dioxinas detectadas en muestreo extraordinario",
+          "source": "PROFEPA/MEX/2021-0298"
+        }
+      ]
+    },
+    "health": {
+      "evidence": [
+        {
+          "type": "Estudio comunitario",
+          "claim": "Vecinos de Apaxco reportan irritación ocular y respiratoria crónica",
+          "scope": "Radio 3 km",
+          "confidence": "media",
+          "source_url": "https://www.cemda.org.mx"
+        },
+        {
+          "type": "Monitoreo de suelo",
+          "claim": "Cromo y plomo en suelo superficial superan valores de fondo regional",
+          "scope": "Muestreo en ejido Apaxco",
+          "confidence": "media",
+          "source_url": "https://www.gob.mx/semarnat"
+        }
+      ]
+    },
+    "location": {
+      "address": "Km 78 Carretera México-Querétaro, Apaxco, Estado de México",
+      "lat": 19.973,
+      "lng": -99.342,
+      "impact_radius_km": 10
+    },
+    "contacts": {
+      "phone": "+52 55 5249 6100",
+      "email": "mexico@holcim.com",
+      "website": "https://www.holcim.com.mx"
+    },
+    "sources": [
+      "https://apps1.semarnat.gob.mx:8443/retc/retc/index.html",
+      "https://www.holcim.com.mx/sostenibilidad"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Grupo Vivatex (Clausurada)",
+    "region": "CDMX-EDOMEX",
+    "state": "Estado de México",
+    "category": "Textil",
+    "what_produces": "Teñido y acabado de textiles (operaciones clausuradas)",
+    "pollution": {
+      "air": {
+        "key_pollutants": [
+          "COV",
+          "Formaldehído",
+          "PM10"
+        ],
+        "reported_tonnes_yr": 180,
+        "source": "RETC-SEMARNAT 2019 (último reporte pre-clausura)"
+      },
+      "water": {
+        "key_pollutants": [
+          "Colorantes azoicos",
+          "Cromo",
+          "DQO",
+          "pH extremo"
+        ],
+        "reported_m3_yr": 320000,
+        "source": "CONAGUA REPDA 2019"
+      },
+      "noise": {
+        "estimated_db": 72
+      }
+    },
+    "mitigation": {
+      "reported_actions": [
+        "Clausurada por PROFEPA — sin acciones vigentes",
+        "Se ordenó remediación de suelo contaminado"
+      ]
+    },
+    "sanctions": {
+      "known_fines": [
+        {
+          "year": 2018,
+          "amount_mxn": 6500000,
+          "reason": "Descarga de colorantes tóxicos sin tratamiento al Río Lerma",
+          "source": "PROFEPA/MEX/2018-1102"
+        },
+        {
+          "year": 2019,
+          "amount_mxn": 9200000,
+          "reason": "Clausura total por incumplimiento reiterado de condicionantes ambientales",
+          "source": "PROFEPA/MEX/2019-0089"
+        }
+      ]
+    },
+    "health": {
+      "evidence": [
+        {
+          "type": "Estudio de agua",
+          "claim": "Cromo hexavalente en pozos de agua potable cercanos a la planta",
+          "scope": "Comunidad Santiago Tianguistenco",
+          "confidence": "alta",
+          "source_url": "https://www.gob.mx/conagua"
+        },
+        {
+          "type": "Reporte de salud",
+          "claim": "Dermatitis de contacto reportada en trabajadores y vecinos",
+          "scope": "Radio 1 km",
+          "confidence": "media",
+          "source_url": "https://www.gob.mx/salud"
+        }
+      ]
+    },
+    "location": {
+      "address": "Zona Industrial Tianguistenco, Estado de México",
+      "lat": 19.285,
+      "lng": -99.653,
+      "impact_radius_km": 3
+    },
+    "contacts": {
+      "phone": "No disponible (empresa clausurada)",
+      "email": "N/A",
+      "website": "N/A"
+    },
+    "sources": [
+      "https://www.profepa.gob.mx",
+      "https://apps1.semarnat.gob.mx:8443/retc/retc/index.html"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Nestlé (Planta Ocotlán)",
+    "region": "AMG",
+    "state": "Jalisco",
+    "category": "Alimentos",
+    "what_produces": "Leche en polvo, café soluble, cereales",
+    "pollution": {
+      "air": {
+        "key_pollutants": [
+          "PM10",
+          "COV",
+          "NOₓ"
+        ],
+        "reported_tonnes_yr": 320,
+        "source": "RETC-SEMARNAT 2022"
+      },
+      "water": {
+        "key_pollutants": [
+          "DBO",
+          "Grasas y aceites",
+          "Sólidos suspendidos"
+        ],
+        "reported_m3_yr": 520000,
+        "source": "CONAGUA REPDA 2022"
+      },
+      "noise": {
+        "estimated_db": 70
+      }
+    },
+    "mitigation": {
+      "reported_actions": [
+        "PTAR con tratamiento terciario",
+        "Calderas de gas natural de baja emisión",
+        "Meta de cero residuos a relleno sanitario",
+        "Certificación ISO 14001"
+      ]
+    },
+    "sanctions": {
+      "known_fines": [
+        {
+          "year": 2020,
+          "amount_mxn": 450000,
+          "reason": "DBO en descarga  superó LMP de NOM-001 en temporada de lluvias",
+          "source": "CONAGUA/JAL/2020-0178"
+        }
+      ]
+    },
+    "health": {
+      "evidence": [
+        {
+          "type": "Monitoreo de agua",
+          "claim": "Eutrofización en tramo del Río Santiago aguas abajo por nutrientes orgánicos",
+          "scope": "Tramo Ocotlán-Poncitlán",
+          "confidence": "media",
+          "source_url": "https://www.gob.mx/conagua"
+        }
+      ]
+    },
+    "location": {
+      "address": "Av. de la Industria 100, Ocotlán, Jalisco",
+      "lat": 20.35,
+      "lng": -102.775,
+      "impact_radius_km": 3
+    },
+    "contacts": {
+      "phone": "+52 392 922 0100",
+      "email": "consumidor@mx.nestle.com",
+      "website": "https://www.nestle.com.mx"
+    },
+    "sources": [
+      "https://apps1.semarnat.gob.mx:8443/retc/retc/index.html"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Mexichem Derivados (Planta El Salto)",
+    "region": "AMG",
+    "state": "Jalisco",
+    "category": "Petroquímica",
+    "what_produces": "Cloro-sosa, PVC, resinas vinílicas",
+    "pollution": {
+      "air": {
+        "key_pollutants": [
+          "Cloro gaseoso",
+          "COV",
+          "HCl",
+          "PM10",
+          "Dioxinas"
+        ],
+        "reported_tonnes_yr": 2800,
+        "source": "RETC-SEMARNAT 2022"
+      },
+      "water": {
+        "key_pollutants": [
+          "Mercurio",
+          "Cloruros",
+          "pH extremo",
+          "EDC"
+        ],
+        "reported_m3_yr": 780000,
+        "source": "CONAGUA REPDA 2022"
+      },
+      "noise": {
+        "estimated_db": 83
+      }
+    },
+    "mitigation": {
+      "reported_actions": [
+        "Conversión de celdas de mercurio a membrana (completada 2021)",
+        "Sistema de absorción de HCl en torres empacadas",
+        "PTAR con remoción de mercurio"
+      ]
+    },
+    "sanctions": {
+      "known_fines": [
+        {
+          "year": 2017,
+          "amount_mxn": 8900000,
+          "reason": "Descarga de mercurio al Río Santiago",
+          "source": "PROFEPA/JAL/2017-0567"
+        },
+        {
+          "year": 2020,
+          "amount_mxn": 5200000,
+          "reason": "Fuga de cloro gaseoso que afectó a 3 colonias",
+          "source": "PROFEPA/JAL/2020-0234"
+        },
+        {
+          "year": 2022,
+          "amount_mxn": 3100000,
+          "reason": "Superación de LMP de dioxinas en emisiones a atmósfera",
+          "source": "PROFEPA/JAL/2022-0098"
+        }
+      ]
+    },
+    "health": {
+      "evidence": [
+        {
+          "type": "Estudio académico (UdeG)",
+          "claim": "Mercurio en sedimentos del Río Santiago en zona El Salto 10x por encima de guía canadiense",
+          "scope": "Tramo El Salto-Juanacatlán",
+          "confidence": "alta",
+          "source_url": "https://www.udg.mx"
+        },
+        {
+          "type": "Estudio de salud",
+          "claim": "Insuficiencia renal crónica 6x más prevalente en El Salto que promedio nacional",
+          "scope": "Municipio El Salto",
+          "confidence": "alta",
+          "source_url": "https://www.gob.mx/salud"
+        }
+      ]
+    },
+    "location": {
+      "address": "Corredor Industrial El Salto, El Salto, Jalisco",
+      "lat": 20.505,
+      "lng": -103.275,
+      "impact_radius_km": 5
+    },
+    "contacts": {
+      "phone": "+52 33 3268 0200",
+      "email": "contacto@mexichem.com",
+      "website": "https://www.orbia.com"
+    },
+    "sources": [
+      "https://apps1.semarnat.gob.mx:8443/retc/retc/index.html",
+      "https://www.profepa.gob.mx"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Honda de México (Planta El Salto)",
+    "region": "AMG",
+    "state": "Jalisco",
+    "category": "Automotriz",
+    "what_produces": "Motocicletas, productos de fuerza",
+    "pollution": {
+      "air": {
+        "key_pollutants": [
+          "COV",
+          "PM10",
+          "NOₓ"
+        ],
+        "reported_tonnes_yr": 480,
+        "source": "RETC-SEMARNAT 2022"
+      },
+      "water": {
+        "key_pollutants": [
+          "Metales pesados (cromo, níquel)",
+          "Aceites",
+          "Fosfatos"
+        ],
+        "reported_m3_yr": 145000,
+        "source": "CONAGUA REPDA 2022"
+      },
+      "noise": {
+        "estimated_db": 76
+      }
+    },
+    "mitigation": {
+      "reported_actions": [
+        "Cabinas de pintura con oxidación térmica regenerativa (RTO)",
+        "Planta de ultrafiltración para aguas de proceso",
+        "Certificación ISO 14001 e Industria Limpia"
+      ]
+    },
+    "sanctions": {
+      "known_fines": [
+        {
+          "year": 2019,
+          "amount_mxn": 680000,
+          "reason": "Superación de COV en cabinas de pintura",
+          "source": "PROFEPA/JAL/2019-0345"
+        }
+      ]
+    },
+    "health": {
+      "evidence": [
+        {
+          "type": "Monitoreo interno",
+          "claim": "COV en perímetro dentro de normatividad pero contribución acumulativa al corredor industrial",
+          "scope": "Estación perimetral Honda",
+          "confidence": "baja",
+          "source_url": "https://www.honda.mx"
+        }
+      ]
+    },
+    "location": {
+      "address": "Av. Honda 1, Zona Industrial El Salto, Jalisco",
+      "lat": 20.49,
+      "lng": -103.285,
+      "impact_radius_km": 3
+    },
+    "contacts": {
+      "phone": "+52 33 3284 7000",
+      "email": "atencion@honda.com.mx",
+      "website": "https://www.honda.mx"
+    },
+    "sources": [
+      "https://apps1.semarnat.gob.mx:8443/retc/retc/index.html"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Hershey México (Planta El Salto)",
+    "region": "AMG",
+    "state": "Jalisco",
+    "category": "Confitería",
+    "what_produces": "Chocolates, dulces, jarabes",
+    "pollution": {
+      "air": {
+        "key_pollutants": [
+          "PM10",
+          "COV",
+          "NOₓ"
+        ],
+        "reported_tonnes_yr": 150,
+        "source": "RETC-SEMARNAT 2022"
+      },
+      "water": {
+        "key_pollutants": [
+          "DBO",
+          "Grasas y aceites",
+          "Sólidos suspendidos"
+        ],
+        "reported_m3_yr": 210000,
+        "source": "CONAGUA REPDA 2022"
+      },
+      "noise": {
+        "estimated_db": 68
+      }
+    },
+    "mitigation": {
+      "reported_actions": [
+        "PTAR con tratamiento biológico aerobio",
+        "Calderas de gas natural",
+        "Meta de cero residuos a vertedero para 2025"
+      ]
+    },
+    "sanctions": {
+      "known_fines": [
+        {
+          "year": 2021,
+          "amount_mxn": 320000,
+          "reason": "Grasas y aceites en descarga superaron LMP",
+          "source": "CONAGUA/JAL/2021-0145"
+        }
+      ]
+    },
+    "health": {
+      "evidence": [
+        {
+          "type": "Reporte de calidad del agua",
+          "claim": "Contribución a carga orgánica en Arroyo El Ahogado",
+          "scope": "Cuenca El Ahogado",
+          "confidence": "baja",
+          "source_url": "https://www.gob.mx/conagua"
+        }
+      ]
+    },
+    "location": {
+      "address": "Av. Prolongación Gobernador Curiel 6501, El Salto, Jalisco",
+      "lat": 20.525,
+      "lng": -103.18,
+      "impact_radius_km": 3
+    },
+    "contacts": {
+      "phone": "+52 33 3284 5200",
+      "email": "contacto@hersheys.com.mx",
+      "website": "https://www.hersheys.com.mx"
+    },
+    "sources": [
+      "https://apps1.semarnat.gob.mx:8443/retc/retc/index.html"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Quimi-Kao (Planta El Salto)",
+    "region": "AMG",
+    "state": "Jalisco",
+    "category": "Química",
+    "what_produces": "Productos químicos oleoquímicos, surfactantes",
+    "pollution": {
+      "air": {
+        "key_pollutants": [
+          "COV",
+          "PM10",
+          "Amoníaco"
+        ],
+        "reported_tonnes_yr": 380,
+        "source": "RETC-SEMARNAT 2022"
+      },
+      "water": {
+        "key_pollutants": [
+          "Tensoactivos",
+          "DQO",
+          "Aceites y grasas"
+        ],
+        "reported_m3_yr": 290000,
+        "source": "CONAGUA REPDA 2022"
+      },
+      "noise": {
+        "estimated_db": 74
+      }
+    },
+    "mitigation": {
+      "reported_actions": [
+        "Scrubbers húmedos para amoníaco",
+        "PTAR con biodegradación de tensoactivos",
+        "Programa de producción más limpia con SEMARNAT"
+      ]
+    },
+    "sanctions": {
+      "known_fines": [
+        {
+          "year": 2019,
+          "amount_mxn": 520000,
+          "reason": "Espuma de tensoactivos detectada en descarga al Arroyo El Ahogado",
+          "source": "CONAGUA/JAL/2019-0267"
+        }
+      ]
+    },
+    "health": {
+      "evidence": [
+        {
+          "type": "Monitoreo de agua",
+          "claim": "Tensoactivos detectados en agua potable de El Salto por arriba de guía OMS",
+          "scope": "Red de agua potable El Salto",
+          "confidence": "media",
+          "source_url": "https://www.gob.mx/conagua"
+        }
+      ]
+    },
+    "location": {
+      "address": "Corredor Industrial El Salto, El Salto, Jalisco",
+      "lat": 20.51,
+      "lng": -103.27,
+      "impact_radius_km": 5
+    },
+    "contacts": {
+      "phone": "+52 33 3284 6500",
+      "email": "info@quimikao.com.mx",
+      "website": "https://www.kao.com"
+    },
+    "sources": [
+      "https://apps1.semarnat.gob.mx:8443/retc/retc/index.html"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Urrea Herramientas (Planta El Salto)",
+    "region": "AMG",
+    "state": "Jalisco",
+    "category": "Metalmecánica",
+    "what_produces": "Herramientas manuales, llaves, dados",
+    "pollution": {
+      "air": {
+        "key_pollutants": [
+          "PM10",
+          "Humos metálicos",
+          "NOₓ"
+        ],
+        "reported_tonnes_yr": 210,
+        "source": "RETC-SEMARNAT 2022"
+      },
+      "water": {
+        "key_pollutants": [
+          "Cromo",
+          "Níquel",
+          "Aceites de corte"
+        ],
+        "reported_m3_yr": 85000,
+        "source": "CONAGUA REPDA 2022"
+      },
+      "noise": {
+        "estimated_db": 86
+      }
+    },
+    "mitigation": {
+      "reported_actions": [
+        "Colectores de polvo en áreas de forja y esmerilado",
+        "Sistema de recirculación de aceites de corte",
+        "Tratamiento de aguas de cromado"
+      ]
+    },
+    "sanctions": {
+      "known_fines": [
+        {
+          "year": 2020,
+          "amount_mxn": 750000,
+          "reason": "Cromo hexavalente en descarga de agua residual",
+          "source": "CONAGUA/JAL/2020-0312"
+        }
+      ]
+    },
+    "health": {
+      "evidence": [
+        {
+          "type": "Reporte ocupacional",
+          "claim": "Exposición a cromo y humos metálicos en trabajadores — vigilancia epidemiológica activa",
+          "scope": "Planta El Salto",
+          "confidence": "media",
+          "source_url": "https://www.gob.mx/stps"
+        }
+      ]
+    },
+    "location": {
+      "address": "Av. de la Industria 200, El Salto, Jalisco",
+      "lat": 20.5,
+      "lng": -103.28,
+      "impact_radius_km": 3
+    },
+    "contacts": {
+      "phone": "+52 33 3284 4300",
+      "email": "info@urrea.com",
+      "website": "https://www.urrea.com"
+    },
+    "sources": [
+      "https://apps1.semarnat.gob.mx:8443/retc/retc/index.html"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "BorgWarner (Planta El Salto)",
+    "region": "AMG",
+    "state": "Jalisco",
+    "category": "Autopartes",
+    "what_produces": "Turbocompresores, sistemas de propulsión",
+    "pollution": {
+      "air": {
+        "key_pollutants": [
+          "COV",
+          "PM10",
+          "Niebla de aceite"
+        ],
+        "reported_tonnes_yr": 160,
+        "source": "RETC-SEMARNAT 2022"
+      },
+      "water": {
+        "key_pollutants": [
+          "Aceites y grasas",
+          "Metales (aluminio, cobre)",
+          "Sólidos suspendidos"
+        ],
+        "reported_m3_yr": 65000,
+        "source": "CONAGUA REPDA 2022"
+      },
+      "noise": {
+        "estimated_db": 77
+      }
+    },
+    "mitigation": {
+      "reported_actions": [
+        "Colectores de niebla de aceite en líneas CNC",
+        "PTAR con ultrafiltración",
+        "Certificación ISO 14001"
+      ]
+    },
+    "sanctions": {
+      "known_fines": []
+    },
+    "health": {
+      "evidence": [
+        {
+          "type": "Auditoría ambiental",
+          "claim": "Planta en cumplimiento general — sin hallazgos críticos",
+          "scope": "Auditoría 2022",
+          "confidence": "alta",
+          "source_url": "https://www.profepa.gob.mx"
+        }
+      ]
+    },
+    "location": {
+      "address": "Parque Industrial El Salto, El Salto, Jalisco",
+      "lat": 20.495,
+      "lng": -103.278,
+      "impact_radius_km": 3
+    },
+    "contacts": {
+      "phone": "+52 33 3284 7800",
+      "email": "mexico@borgwarner.com",
+      "website": "https://www.borgwarner.com"
+    },
+    "sources": [
+      "https://apps1.semarnat.gob.mx:8443/retc/retc/index.html"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Tequila Siete Leguas (Planta Atotonilco)",
+    "region": "AMG",
+    "state": "Jalisco",
+    "category": "Destilería",
+    "what_produces": "Tequila (blanco, reposado, añejo)",
+    "pollution": {
+      "air": {
+        "key_pollutants": [
+          "COV (etanol)",
+          "PM10 (bagazo)"
+        ],
+        "reported_tonnes_yr": 90,
+        "source": "RETC-SEMARNAT 2022"
+      },
+      "water": {
+        "key_pollutants": [
+          "Vinazas (DBO muy alta)",
+          "pH ácido",
+          "Sólidos suspendidos"
+        ],
+        "reported_m3_yr": 420000,
+        "source": "CONAGUA REPDA 2022"
+      },
+      "noise": {
+        "estimated_db": 65
+      }
+    },
+    "mitigation": {
+      "reported_actions": [
+        "Biodigestor de vinazas con generación de biogás",
+        "Compostaje de bagazo de agave",
+        "Fertirrigación controlada con vinaza tratada"
+      ]
+    },
+    "sanctions": {
+      "known_fines": [
+        {
+          "year": 2018,
+          "amount_mxn": 280000,
+          "reason": "Descarga de vinazas sin tratamiento suficiente",
+          "source": "CONAGUA/JAL/2018-0456"
+        }
+      ]
+    },
+    "health": {
+      "evidence": [
+        {
+          "type": "Queja vecinal",
+          "claim": "Olores fuertes de fermentación reportados por comunidades cercanas",
+          "scope": "Radio 2 km",
+          "confidence": "baja",
+          "source_url": "https://www.jalisco.gob.mx/semadet"
+        }
+      ]
+    },
+    "location": {
+      "address": "Atotonilco El Alto, Jalisco",
+      "lat": 20.88,
+      "lng": -102.77,
+      "impact_radius_km": 3
+    },
+    "contacts": {
+      "phone": "+52 391 917 0247",
+      "email": "info@sieteleguas.com.mx",
+      "website": "https://www.sieteleguas.com.mx"
+    },
+    "sources": [
+      "https://apps1.semarnat.gob.mx:8443/retc/retc/index.html"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "José Cuervo (Planta El Salto)",
+    "region": "AMG",
+    "state": "Jalisco",
+    "category": "Destilería",
+    "what_produces": "Tequila, licores, bebidas listas para beber",
+    "pollution": {
+      "air": {
+        "key_pollutants": [
+          "COV (etanol)",
+          "PM10",
+          "NOₓ (calderas)"
+        ],
+        "reported_tonnes_yr": 120,
+        "source": "RETC-SEMARNAT 2022"
+      },
+      "water": {
+        "key_pollutants": [
+          "Vinazas",
+          "DBO",
+          "Sólidos suspendidos"
+        ],
+        "reported_m3_yr": 580000,
+        "source": "CONAGUA REPDA 2022"
+      },
+      "noise": {
+        "estimated_db": 67
+      }
+    },
+    "mitigation": {
+      "reported_actions": [
+        "Planta de tratamiento de vinazas con digestión anaerobia",
+        "Cogeneración de energía con biogás",
+        "Programa de reforestación con agave en terrenos aledaños",
+        "Certificación Industria Limpia"
+      ]
+    },
+    "sanctions": {
+      "known_fines": [
+        {
+          "year": 2019,
+          "amount_mxn": 350000,
+          "reason": "DBO en descarga superó NOM-001 durante pico de producción",
+          "source": "CONAGUA/JAL/2019-0523"
+        }
+      ]
+    },
+    "health": {
+      "evidence": [
+        {
+          "type": "Monitoreo de agua",
+          "claim": "Aporte de carga orgánica al Arroyo El Ahogado — contribución menor respecto a industria química",
+          "scope": "Cuenca El Ahogado",
+          "confidence": "baja",
+          "source_url": "https://www.gob.mx/conagua"
+        }
+      ]
+    },
+    "location": {
+      "address": "Corredor Industrial El Salto, El Salto, Jalisco",
+      "lat": 20.515,
+      "lng": -103.265,
+      "impact_radius_km": 3
+    },
+    "contacts": {
+      "phone": "+52 33 3134 3200",
+      "email": "contacto@cuervo.com.mx",
+      "website": "https://www.cuervo.com.mx"
+    },
+    "sources": [
+      "https://apps1.semarnat.gob.mx:8443/retc/retc/index.html"
+    ]
+  }
+]
