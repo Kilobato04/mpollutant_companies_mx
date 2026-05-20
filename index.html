@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mapa de Empresas y Riesgos Ambientales (Preliminar)</title>
+
+  https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
+  ./css/styles.css
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Mapa de Empresas y Riesgos Ambientales</div>
+      <div class="subtitle">Preliminar · CDMX/EDOMEX · Monterrey · GDL</div>
+    </div>
+
+    <div class="controls">
+      <input id="search" type="search" placeholder="Buscar empresa / región / contaminante..." />
+      <select id="region">
+        <option value="all">Todas las regiones</option>
+        <option value="CDMX/EDOMEX">CDMX/EDOMEX</option>
+        <option value="Monterrey (ZMM/ZMM)">Monterrey</option>
+        <option value="Guadalajara (AMG)">Guadalajara (AMG)</option>
+      </select>
+      <select id="medium">
+        <option value="all">Aire / Agua / Ruido</option>
+        <option value="air">Aire</option>
+        <option value="water">Agua</option>
+        <option value="noise">Ruido</option>
+      </select>
+      <button id="reset">Reset</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="panel">
+        <div class="panel-title">Listado</div>
+        <div id="stats" class="stats"></div>
+        <div id="list" class="list"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-title">Notas</div>
+        <p class="muted">
+          Los puntos sin coordenadas aparecen en el listado, pero no se pintan en el mapa.
+          Añade <code>lat</code>/<code>lng</code> en <code>data/empresas.json</code> para activarlos.
+        </p>
+      </div>
+    </aside>
+
+    <section class="map-wrap">
+      <div id="map"></div>
+    </section>
+  </main>
+
+  https://unpkg.com/leaflet@1.9.4/dist/leaflet.jsscript>
+  ./js/app.jsscript>
+</body>
+</html>
