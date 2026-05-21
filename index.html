@@ -1,28 +1,34 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mapa Nacional de Riesgos Ambientales – México</title>
+<!doctype html><html lang="es"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>🌎 Mapa Nacional de Riesgos Ambientales (V4)</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <link rel="stylesheet" href="css/styles.css"/>
-</head>
-<body>
+</head><body>
 <div id="topbar">
- <div class="brand"><h1>🌎 Mapa Nacional de Riesgos Ambientales</h1><span class="sub">55 empresas · 19 estados · 6 regiones</span></div>
- <div class="controls">
-  <input id="search" placeholder="Buscar empresa, estado…"/>
-  <select id="filterRegion"><option value="">Todas las regiones</option><option>NORESTE</option><option>NOROESTE</option><option>CENTRO</option><option>BAJÍO</option><option>SURESTE</option><option>PACÍFICO</option></select>
-  <select id="filterMedium"><option value="">Todos los medios</option><option value="air">🌬 Aire</option><option value="water">💧 Agua</option><option value="noise">🔊 Ruido</option></select>
-  <button id="top10Btn">⚠ Top 10</button>
-  <button id="resetBtn">↺ Reset</button>
- </div>
+  <div class="brand"><div class="h1">🌎 Mapa Nacional de Riesgos Ambientales</div><div class="sub">V4 · Público vs Privado · Clusters · Top 10 privadas</div></div>
+  <div class="controls">
+    <input id="q" placeholder="🔎 Buscar empresa, estado, sector…"/>
+    <select id="own"><option value="">Todos</option><option value="privado">Privado</option><option value="publico">Público</option><option value="cluster">Clusters</option><option value="mixto">Mixto</option></select>
+    <select id="reg"><option value="">Todas las regiones</option><option>NORESTE</option><option>NOROESTE</option><option>CENTRO</option><option>BAJÍO</option><option>SURESTE</option><option>PACÍFICO</option></select>
+    <select id="med"><option value="">Todos los medios</option><option value="air">🌬 Aire</option><option value="water">💧 Agua</option><option value="noise">🔊 Ruido</option></select>
+    <button id="top10">⚠ Top 10 (global)</button>
+    <button id="top10p">🏭 Top 10 privadas</button>
+    <button id="reset">↺ Reset</button>
+  </div>
 </div>
 <div id="main">
- <aside id="sidebar"><div id="stats"></div><div id="list"></div></aside>
- <div id="map"></div>
+  <aside id="sidebar">
+    <div id="stats"></div>
+    <div class="legend">
+      <span class="lg"><i class="dot pub"></i> Público</span>
+      <span class="lg"><i class="dot pri"></i> Privado</span>
+      <span class="lg"><i class="dot clu"></i> Cluster</span>
+      <span class="lg"><i class="dot mix"></i> Mixto</span>
+      <span class="lg"><i class="dot top"></i> Top</span>
+    </div>
+    <div id="list"></div>
+  </aside>
+  <div id="map"></div>
 </div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="js/app.js"></script>
-</body>
-</html>
+</body></html>
