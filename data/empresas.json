@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "4.1",
-    "note": "V4.1 deploy limpio. Incluye ownership y esquema de multas (amount_mxn). Valores de contaminación son proxy salvo data_quality != proxy_v4.",
+    "version": "5.0",
+    "note": "Consolidado a partir de múltiples versiones dentro del archivo. Se deduplicó por nombre y se normalizó el esquema. Nuevos nodos añadidos (CEMEX Barrientos, clusters mineros, cementeras medias) con data_quality=proxy_v4.",
     "filters": [
       "ownership",
       "region",
@@ -1269,7 +1269,7 @@
       ],
       "score": 36,
       "impact_level": "bajo",
-      "top10_private": true
+      "top10_private": false
     },
     {
       "id": 20,
@@ -1401,7 +1401,7 @@
       ],
       "score": 36,
       "impact_level": "muy_alto",
-      "top10_private": true
+      "top10_private": false
     },
     {
       "id": 22,
@@ -2511,2764 +2511,6 @@
         "https://www.reporteindigo.com/nacional/dano-ambiental-de-empresas-a-suelos-y-mares-avanza-en-mexico-20260202-0032.html"
       ],
       "score": 11,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 70,
-      "name": "Cluster Tula–Apaxco–Atotonilco",
-      "ownership": "cluster",
-      "node_type": "cluster",
-      "region": "CENTRO",
-      "state": "Hidalgo/EdoMéx",
-      "category": "Cluster industrial",
-      "sector": "cluster",
-      "what_produces": "Cluster industrial",
-      "top10": true,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 9000.0,
-          "source": "Proxy (v4.1)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 5000000.0,
-          "source": "Proxy (v4.1)"
-        },
-        "noise": {
-          "estimated_db": 85.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Refinar con SIINEM/INEM"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Hidalgo/EdoMéx, México",
-        "lat": 19.9914,
-        "lng": -99.1946,
-        "impact_radius_km": 25.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php"
-      ],
-      "score": 98,
-      "impact_level": "muy_alto",
-      "top10_private": false
-    },
-    {
-      "id": 71,
-      "name": "Cluster Valle de México (Tlalnepantla)",
-      "ownership": "cluster",
-      "node_type": "cluster",
-      "region": "CENTRO",
-      "state": "EdoMéx/CDMX",
-      "category": "Cluster industrial",
-      "sector": "cluster",
-      "what_produces": "Cluster industrial",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 6000.0,
-          "source": "Proxy (v4.1)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 800000.0,
-          "source": "Proxy (v4.1)"
-        },
-        "noise": {
-          "estimated_db": 78.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Refinar con SIINEM/INEM"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "EdoMéx/CDMX, México",
-        "lat": 19.5401,
-        "lng": -99.1954,
-        "impact_radius_km": 25.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php"
-      ],
-      "score": 68,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 72,
-      "name": "Cluster Coatzacoalcos petroquímico",
-      "ownership": "cluster",
-      "node_type": "cluster",
-      "region": "SURESTE",
-      "state": "Veracruz",
-      "category": "Cluster industrial",
-      "sector": "cluster",
-      "what_produces": "Cluster industrial",
-      "top10": true,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 7000.0,
-          "source": "Proxy (v4.1)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 1200000.0,
-          "source": "Proxy (v4.1)"
-        },
-        "noise": {
-          "estimated_db": 80.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Refinar con SIINEM/INEM"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Veracruz, México",
-        "lat": 18.14,
-        "lng": -94.42,
-        "impact_radius_km": 25.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
-        "https://www.reporteindigo.com/nacional/dano-ambiental-de-empresas-a-suelos-y-mares-avanza-en-mexico-20260202-0032.html"
-      ],
-      "score": 78,
-      "impact_level": "muy_alto",
-      "top10_private": false
-    },
-    {
-      "id": 73,
-      "name": "Cluster El Salto industrial",
-      "ownership": "cluster",
-      "node_type": "cluster",
-      "region": "PACÍFICO",
-      "state": "Jalisco",
-      "category": "Cluster industrial",
-      "sector": "cluster",
-      "what_produces": "Cluster industrial",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 4000.0,
-          "source": "Proxy (v4.1)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 500000.0,
-          "source": "Proxy (v4.1)"
-        },
-        "noise": {
-          "estimated_db": 78.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Refinar con SIINEM/INEM"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Jalisco, México",
-        "lat": 20.505,
-        "lng": -103.275,
-        "impact_radius_km": 25.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
-      ],
-      "score": 48,
-      "impact_level": "bajo",
-      "top10_private": false
-    }
-  ]
-}
-{
-  "metadata": {
-    "version": "4.0",
-    "note": "V4 limpio para deploy. Valores de emisiones/agua/ruido son proxies para ranking UI; usar data_quality.",
-    "filters": [
-      "ownership",
-      "region",
-      "medium",
-      "top10",
-      "top10_private"
-    ]
-  },
-  "empresas": [
-    {
-      "id": 1,
-      "name": "PEMEX Refinería Tula",
-      "ownership": "publico",
-      "node_type": "empresa",
-      "region": "CENTRO",
-      "state": "Hidalgo",
-      "category": "Refinería",
-      "sector": "energía",
-      "what_produces": "Refinería",
-      "top10": true,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 28000.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 2800000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 90.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Hidalgo, México",
-        "lat": 20.0547,
-        "lng": -99.3375,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 289,
-      "impact_level": "muy_alto",
-      "top10_private": false
-    },
-    {
-      "id": 2,
-      "name": "PEMEX Refinería Cadereyta",
-      "ownership": "publico",
-      "node_type": "empresa",
-      "region": "NORESTE",
-      "state": "Nuevo León",
-      "category": "Refinería",
-      "sector": "energía",
-      "what_produces": "Refinería",
-      "top10": true,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 12500.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 1400000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 88.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Nuevo León, México",
-        "lat": 25.5856,
-        "lng": -99.9415,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 134,
-      "impact_level": "muy_alto",
-      "top10_private": false
-    },
-    {
-      "id": 3,
-      "name": "PEMEX Refinería Salamanca",
-      "ownership": "publico",
-      "node_type": "empresa",
-      "region": "BAJÍO",
-      "state": "Guanajuato",
-      "category": "Refinería",
-      "sector": "energía",
-      "what_produces": "Refinería",
-      "top10": true,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 9800.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 1100000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 86.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Guanajuato, México",
-        "lat": 20.5736,
-        "lng": -101.195,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 107,
-      "impact_level": "muy_alto",
-      "top10_private": false
-    },
-    {
-      "id": 4,
-      "name": "PEMEX Refinería Minatitlán",
-      "ownership": "publico",
-      "node_type": "empresa",
-      "region": "SURESTE",
-      "state": "Veracruz",
-      "category": "Refinería",
-      "sector": "energía",
-      "what_produces": "Refinería",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 8200.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 980000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 84.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Veracruz, México",
-        "lat": 17.9833,
-        "lng": -94.55,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 90,
-      "impact_level": "medio",
-      "top10_private": false
-    },
-    {
-      "id": 5,
-      "name": "PEMEX Refinería Salina Cruz",
-      "ownership": "publico",
-      "node_type": "empresa",
-      "region": "SURESTE",
-      "state": "Oaxaca",
-      "category": "Refinería",
-      "sector": "energía",
-      "what_produces": "Refinería",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 7500.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 850000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 82.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Oaxaca, México",
-        "lat": 16.17,
-        "lng": -95.195,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 83,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 6,
-      "name": "PEMEX Refinería Madero",
-      "ownership": "publico",
-      "node_type": "empresa",
-      "region": "NORESTE",
-      "state": "Tamaulipas",
-      "category": "Refinería",
-      "sector": "energía",
-      "what_produces": "Refinería",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 6800.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 780000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 83.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Tamaulipas, México",
-        "lat": 22.275,
-        "lng": -97.835,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 76,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 7,
-      "name": "PEMEX Dos Bocas (proxy)",
-      "ownership": "publico",
-      "node_type": "empresa",
-      "region": "SURESTE",
-      "state": "Tabasco",
-      "category": "Refinería",
-      "sector": "energía",
-      "what_produces": "Refinería",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 3200.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 450000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 78.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Tabasco, México",
-        "lat": 18.44,
-        "lng": -93.21,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 40,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 8,
-      "name": "CFE CT Petacalco",
-      "ownership": "publico",
-      "node_type": "empresa",
-      "region": "PACÍFICO",
-      "state": "Guerrero",
-      "category": "Carboeléctrica",
-      "sector": "energía",
-      "what_produces": "Carboeléctrica",
-      "top10": true,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 24000.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 8500000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 92.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Guerrero, México",
-        "lat": 17.958,
-        "lng": -102.105,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 249,
-      "impact_level": "muy_alto",
-      "top10_private": false
-    },
-    {
-      "id": 9,
-      "name": "CFE CT Tula",
-      "ownership": "publico",
-      "node_type": "empresa",
-      "region": "CENTRO",
-      "state": "Hidalgo",
-      "category": "Termoeléctrica",
-      "sector": "energía",
-      "what_produces": "Termoeléctrica",
-      "top10": true,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 22000.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 5200000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 92.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Hidalgo, México",
-        "lat": 20.068,
-        "lng": -99.349,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 229,
-      "impact_level": "muy_alto",
-      "top10_private": false
-    },
-    {
-      "id": 10,
-      "name": "CFE CT Carbón II Nava",
-      "ownership": "publico",
-      "node_type": "empresa",
-      "region": "NORESTE",
-      "state": "Coahuila",
-      "category": "Carboeléctrica",
-      "sector": "energía",
-      "what_produces": "Carboeléctrica",
-      "top10": true,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 18000.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 4200000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 88.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Coahuila, México",
-        "lat": 28.63,
-        "lng": -100.76,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 189,
-      "impact_level": "muy_alto",
-      "top10_private": false
-    },
-    {
-      "id": 11,
-      "name": "CFE CT Río Escondido",
-      "ownership": "publico",
-      "node_type": "empresa",
-      "region": "NORESTE",
-      "state": "Coahuila",
-      "category": "Carboeléctrica",
-      "sector": "energía",
-      "what_produces": "Carboeléctrica",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 12000.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 3100000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 86.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Coahuila, México",
-        "lat": 28.65,
-        "lng": -100.73,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 129,
-      "impact_level": "medio",
-      "top10_private": false
-    },
-    {
-      "id": 12,
-      "name": "CFE CT Manzanillo",
-      "ownership": "publico",
-      "node_type": "empresa",
-      "region": "PACÍFICO",
-      "state": "Colima",
-      "category": "Termoeléctrica",
-      "sector": "energía",
-      "what_produces": "Termoeléctrica",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 4800.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 2800000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 82.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Colima, México",
-        "lat": 19.06,
-        "lng": -104.32,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 56,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 13,
-      "name": "CFE CT Altamira",
-      "ownership": "publico",
-      "node_type": "empresa",
-      "region": "NORESTE",
-      "state": "Tamaulipas",
-      "category": "Termoeléctrica",
-      "sector": "energía",
-      "what_produces": "Termoeléctrica",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 5500.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 1800000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 80.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Tamaulipas, México",
-        "lat": 22.39,
-        "lng": -97.91,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 63,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 14,
-      "name": "CFE CT Tuxpan",
-      "ownership": "publico",
-      "node_type": "empresa",
-      "region": "SURESTE",
-      "state": "Veracruz",
-      "category": "Termoeléctrica",
-      "sector": "energía",
-      "what_produces": "Termoeléctrica",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 3800.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 1500000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 80.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Veracruz, México",
-        "lat": 20.96,
-        "lng": -97.4,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 46,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 15,
-      "name": "CEMEX Planta Monterrey",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NORESTE",
-      "state": "Nuevo León",
-      "category": "Cementera",
-      "sector": "cemento",
-      "what_produces": "Cementera",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 3500.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 280000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 85.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Nuevo León, México",
-        "lat": 25.6982,
-        "lng": -100.2978,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 44,
-      "impact_level": "bajo",
-      "top10_private": true
-    },
-    {
-      "id": 16,
-      "name": "CEMEX Planta Tepeaca",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "CENTRO",
-      "state": "Puebla",
-      "category": "Cementera",
-      "sector": "cemento",
-      "what_produces": "Cementera",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 3200.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 210000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 82.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Puebla, México",
-        "lat": 18.97,
-        "lng": -97.92,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 40,
-      "impact_level": "bajo",
-      "top10_private": true
-    },
-    {
-      "id": 17,
-      "name": "Holcim-Apasco Apaxco",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "CENTRO",
-      "state": "Estado de México",
-      "category": "Cementera",
-      "sector": "cemento",
-      "what_produces": "Cementera",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 4200.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 180000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 84.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Estado de México, México",
-        "lat": 19.973,
-        "lng": -99.342,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 50,
-      "impact_level": "bajo",
-      "top10_private": true
-    },
-    {
-      "id": 18,
-      "name": "Cementos Moctezuma (Morelos)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "CENTRO",
-      "state": "Morelos",
-      "category": "Cementera",
-      "sector": "cemento",
-      "what_produces": "Cementera",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 2100.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 120000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 79.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Morelos, México",
-        "lat": 18.64,
-        "lng": -99.22,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 29,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 19,
-      "name": "GCC Cementos Chihuahua",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NOROESTE",
-      "state": "Chihuahua",
-      "category": "Cementera",
-      "sector": "cemento",
-      "what_produces": "Cementera",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 2800.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 150000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 80.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Chihuahua, México",
-        "lat": 28.635,
-        "lng": -106.09,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 36,
-      "impact_level": "bajo",
-      "top10_private": true
-    },
-    {
-      "id": 20,
-      "name": "Cementos Cruz Azul (CYCNA Oriente)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "CENTRO",
-      "state": "Puebla",
-      "category": "Cementera",
-      "sector": "cemento",
-      "what_produces": "Cementera",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 3200.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 210000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 82.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Puebla, México",
-        "lat": 18.8835,
-        "lng": -97.7334,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 40,
-      "impact_level": "bajo",
-      "top10_private": true
-    },
-    {
-      "id": 21,
-      "name": "Cementos Cruz Azul (Hidalgo proxy)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "CENTRO",
-      "state": "Hidalgo",
-      "category": "Cementera",
-      "sector": "cemento",
-      "what_produces": "Cementera",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 2800.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 180000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 80.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Hidalgo, México",
-        "lat": 19.98,
-        "lng": -98.92,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 36,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 22,
-      "name": "CEMEX Planta Hidalgo (proxy)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "CENTRO",
-      "state": "Hidalgo",
-      "category": "Cementera",
-      "sector": "cemento",
-      "what_produces": "Cementera",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 3000.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 190000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 82.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Hidalgo, México",
-        "lat": 20.12,
-        "lng": -99.22,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 38,
-      "impact_level": "bajo",
-      "top10_private": true
-    },
-    {
-      "id": 23,
-      "name": "Orbia (Mexichem) El Salto",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "PACÍFICO",
-      "state": "Jalisco",
-      "category": "Química",
-      "sector": "química",
-      "what_produces": "Química",
-      "top10": true,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 2800.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 780000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 83.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Jalisco, México",
-        "lat": 20.505,
-        "lng": -103.275,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 36,
-      "impact_level": "muy_alto",
-      "top10_private": false
-    },
-    {
-      "id": 24,
-      "name": "Braskem Idesa (Etileno XXI)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "SURESTE",
-      "state": "Veracruz",
-      "category": "Petroquímica",
-      "sector": "química",
-      "what_produces": "Petroquímica",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 2200.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 580000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 78.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Veracruz, México",
-        "lat": 18.13,
-        "lng": -94.41,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 30,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 25,
-      "name": "Innophos Coatzacoalcos",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "SURESTE",
-      "state": "Veracruz",
-      "category": "Química",
-      "sector": "química",
-      "what_produces": "Química",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 1800.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 450000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 80.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Veracruz, México",
-        "lat": 18.135,
-        "lng": -94.4,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 26,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 26,
-      "name": "PEMEX Cangrejera (mixto proxy)",
-      "ownership": "mixto",
-      "node_type": "empresa",
-      "region": "SURESTE",
-      "state": "Veracruz",
-      "category": "Petroquímica",
-      "sector": "química",
-      "what_produces": "Petroquímica",
-      "top10": true,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 5500.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 1800000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 85.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Veracruz, México",
-        "lat": 18.14,
-        "lng": -94.42,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 64,
-      "impact_level": "muy_alto",
-      "top10_private": false
-    },
-    {
-      "id": 27,
-      "name": "Peñoles Met-Mex Torreón",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NORESTE",
-      "state": "Coahuila",
-      "category": "Fundición metales",
-      "sector": "metales/minería",
-      "what_produces": "Fundición metales",
-      "top10": true,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 3500.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 420000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 82.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Coahuila, México",
-        "lat": 25.54,
-        "lng": -103.42,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 43,
-      "impact_level": "muy_alto",
-      "top10_private": true
-    },
-    {
-      "id": 28,
-      "name": "Grupo México Buenavista del Cobre",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NOROESTE",
-      "state": "Sonora",
-      "category": "Minería cobre",
-      "sector": "metales/minería",
-      "what_produces": "Minería cobre",
-      "top10": true,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 2800.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 1200000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 78.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Sonora, México",
-        "lat": 30.95,
-        "lng": -110.3,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 36,
-      "impact_level": "muy_alto",
-      "top10_private": false
-    },
-    {
-      "id": 29,
-      "name": "Ternium Monterrey",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NORESTE",
-      "state": "Nuevo León",
-      "category": "Siderurgia",
-      "sector": "metales/minería",
-      "what_produces": "Siderurgia",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 4800.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 620000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 82.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Nuevo León, México",
-        "lat": 25.7284,
-        "lng": -100.3062,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 56,
-      "impact_level": "bajo",
-      "top10_private": true
-    },
-    {
-      "id": 30,
-      "name": "ArcelorMittal Lázaro Cárdenas",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "PACÍFICO",
-      "state": "Michoacán",
-      "category": "Siderurgia",
-      "sector": "metales/minería",
-      "what_produces": "Siderurgia",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 4800.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 920000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 85.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Michoacán, México",
-        "lat": 17.958,
-        "lng": -102.2,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 56,
-      "impact_level": "bajo",
-      "top10_private": true
-    },
-    {
-      "id": 31,
-      "name": "AHMSA Monclova (proxy)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NORESTE",
-      "state": "Coahuila",
-      "category": "Siderurgia",
-      "sector": "metales/minería",
-      "what_produces": "Siderurgia",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 5200.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 1600000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 88.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Coahuila, México",
-        "lat": 26.9,
-        "lng": -101.42,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 61,
-      "impact_level": "bajo",
-      "top10_private": true
-    },
-    {
-      "id": 32,
-      "name": "Zinc Nacional Monterrey",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NORESTE",
-      "state": "Nuevo León",
-      "category": "Metalurgia",
-      "sector": "metales/minería",
-      "what_produces": "Metalurgia",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 1200.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 95000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 80.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Nuevo León, México",
-        "lat": 25.7513,
-        "lng": -100.3194,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 20,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 33,
-      "name": "SIMEC Aceros Chihuahua",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NOROESTE",
-      "state": "Chihuahua",
-      "category": "Siderurgia",
-      "sector": "metales/minería",
-      "what_produces": "Siderurgia",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 1800.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 280000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 84.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Chihuahua, México",
-        "lat": 28.61,
-        "lng": -106.08,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 26,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 34,
-      "name": "Nemak Monterrey (proxy)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NORESTE",
-      "state": "Nuevo León",
-      "category": "Autopartes metal",
-      "sector": "metales/minería",
-      "what_produces": "Autopartes metal",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 900.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 120000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 78.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Nuevo León, México",
-        "lat": 25.7,
-        "lng": -100.25,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 17,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 35,
-      "name": "Vitro Monterrey (proxy)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NORESTE",
-      "state": "Nuevo León",
-      "category": "Vidrio",
-      "sector": "manufactura",
-      "what_produces": "Vidrio",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 950.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 185000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 78.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Nuevo León, México",
-        "lat": 25.69,
-        "lng": -100.3,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 17,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 36,
-      "name": "Volkswagen Puebla",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "CENTRO",
-      "state": "Puebla",
-      "category": "Automotriz",
-      "sector": "automotriz",
-      "what_produces": "Automotriz",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 1200.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 420000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 80.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Puebla, México",
-        "lat": 19.07,
-        "lng": -98.2,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 20,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 37,
-      "name": "Audi San José Chiapa",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "CENTRO",
-      "state": "Puebla",
-      "category": "Automotriz",
-      "sector": "automotriz",
-      "what_produces": "Automotriz",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 800.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 280000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 78.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Puebla, México",
-        "lat": 19.32,
-        "lng": -97.75,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 16,
       "impact_level": "bajo",
       "top10_private": false
     },
@@ -6747,82 +3989,15 @@
       "top10_private": false
     },
     {
-      "id": 70,
-      "name": "Cluster Tula–Apaxco–Atotonilco",
-      "ownership": "cluster",
-      "node_type": "cluster",
+      "id": 60,
+      "name": "Cementos Cruz Azul (Hidalgo proxy)",
+      "ownership": "privado",
+      "node_type": "empresa",
       "region": "CENTRO",
-      "state": "Hidalgo/EdoMéx",
-      "category": "Cluster industrial",
-      "sector": "cluster",
-      "what_produces": "Cluster industrial",
-      "top10": true,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 9000.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 5000000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 85.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Refinar con SIINEM/INEM"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Hidalgo/EdoMéx, México",
-        "lat": 19.9914,
-        "lng": -99.1946,
-        "impact_radius_km": 25.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 98,
-      "impact_level": "muy_alto",
-      "top10_private": false
-    },
-    {
-      "id": 71,
-      "name": "Cluster Valle de México (Tlalnepantla)",
-      "ownership": "cluster",
-      "node_type": "cluster",
-      "region": "CENTRO",
-      "state": "EdoMéx/CDMX",
-      "category": "Cluster industrial",
-      "sector": "cluster",
-      "what_produces": "Cluster industrial",
+      "state": "Hidalgo",
+      "category": "Cementera",
+      "sector": "cemento",
+      "what_produces": "Cementera",
       "top10": false,
       "data_quality": "proxy_v4",
       "pollution": {
@@ -6834,7 +4009,7 @@
             "SO₂",
             "CO₂"
           ],
-          "reported_tonnes_yr": 6000.0,
+          "reported_tonnes_yr": 2800.0,
           "source": "Proxy (v4)"
         },
         "water": {
@@ -6842,16 +4017,16 @@
             "SS",
             "DQO"
           ],
-          "reported_m3_yr": 800000.0,
+          "reported_m3_yr": 180000.0,
           "source": "Proxy (v4)"
         },
         "noise": {
-          "estimated_db": 78.0
+          "estimated_db": 80.0
         }
       },
       "mitigation": {
         "reported_actions": [
-          "Refinar con SIINEM/INEM"
+          "Monitoreo (si aplica)"
         ]
       },
       "sanctions": {
@@ -6861,10 +4036,10 @@
         "evidence": []
       },
       "location": {
-        "address": "EdoMéx/CDMX, México",
-        "lat": 19.5401,
-        "lng": -99.1954,
-        "impact_radius_km": 25.0
+        "address": "Hidalgo, México",
+        "lat": 19.98,
+        "lng": -98.92,
+        "impact_radius_km": 8.0
       },
       "contacts": {
         "phone": "N/A",
@@ -6876,12 +4051,414 @@
         "https://apps1.semarnat.gob.mx:8443/retc/",
         "https://www.profepa.gob.mx"
       ],
-      "score": 68,
+      "score": 36,
       "impact_level": "bajo",
       "top10_private": false
     },
     {
-      "id": 72,
+      "id": 61,
+      "name": "CEMEX Planta Hidalgo (proxy)",
+      "ownership": "privado",
+      "node_type": "empresa",
+      "region": "CENTRO",
+      "state": "Hidalgo",
+      "category": "Cementera",
+      "sector": "cemento",
+      "what_produces": "Cementera",
+      "top10": false,
+      "data_quality": "proxy_v4",
+      "pollution": {
+        "air": {
+          "key_pollutants": [
+            "PM10",
+            "PM2.5",
+            "NOₓ",
+            "SO₂",
+            "CO₂"
+          ],
+          "reported_tonnes_yr": 3000.0,
+          "source": "Proxy (v4)"
+        },
+        "water": {
+          "key_pollutants": [
+            "SS",
+            "DQO"
+          ],
+          "reported_m3_yr": 190000.0,
+          "source": "Proxy (v4)"
+        },
+        "noise": {
+          "estimated_db": 82.0
+        }
+      },
+      "mitigation": {
+        "reported_actions": [
+          "Monitoreo (si aplica)"
+        ]
+      },
+      "sanctions": {
+        "known_fines": []
+      },
+      "health": {
+        "evidence": []
+      },
+      "location": {
+        "address": "Hidalgo, México",
+        "lat": 20.12,
+        "lng": -99.22,
+        "impact_radius_km": 8.0
+      },
+      "contacts": {
+        "phone": "N/A",
+        "email": "N/A",
+        "website": "N/A"
+      },
+      "sources": [
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
+        "https://apps1.semarnat.gob.mx:8443/retc/",
+        "https://www.profepa.gob.mx"
+      ],
+      "score": 38,
+      "impact_level": "bajo",
+      "top10_private": true
+    },
+    {
+      "id": 62,
+      "name": "PEMEX Cangrejera (mixto proxy)",
+      "ownership": "mixto",
+      "node_type": "empresa",
+      "region": "SURESTE",
+      "state": "Veracruz",
+      "category": "Petroquímica",
+      "sector": "química",
+      "what_produces": "Petroquímica",
+      "top10": true,
+      "data_quality": "proxy_v4",
+      "pollution": {
+        "air": {
+          "key_pollutants": [
+            "PM10",
+            "PM2.5",
+            "NOₓ",
+            "SO₂",
+            "CO₂"
+          ],
+          "reported_tonnes_yr": 5500.0,
+          "source": "Proxy (v4)"
+        },
+        "water": {
+          "key_pollutants": [
+            "SS",
+            "DQO"
+          ],
+          "reported_m3_yr": 1800000.0,
+          "source": "Proxy (v4)"
+        },
+        "noise": {
+          "estimated_db": 85.0
+        }
+      },
+      "mitigation": {
+        "reported_actions": [
+          "Monitoreo (si aplica)"
+        ]
+      },
+      "sanctions": {
+        "known_fines": []
+      },
+      "health": {
+        "evidence": []
+      },
+      "location": {
+        "address": "Veracruz, México",
+        "lat": 18.14,
+        "lng": -94.42,
+        "impact_radius_km": 8.0
+      },
+      "contacts": {
+        "phone": "N/A",
+        "email": "N/A",
+        "website": "N/A"
+      },
+      "sources": [
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
+        "https://apps1.semarnat.gob.mx:8443/retc/",
+        "https://www.profepa.gob.mx"
+      ],
+      "score": 64,
+      "impact_level": "muy_alto",
+      "top10_private": false
+    },
+    {
+      "id": 63,
+      "name": "Zinc Nacional Monterrey",
+      "ownership": "privado",
+      "node_type": "empresa",
+      "region": "NORESTE",
+      "state": "Nuevo León",
+      "category": "Metalurgia",
+      "sector": "metales/minería",
+      "what_produces": "Metalurgia",
+      "top10": false,
+      "data_quality": "proxy_v4",
+      "pollution": {
+        "air": {
+          "key_pollutants": [
+            "PM10",
+            "PM2.5",
+            "NOₓ",
+            "SO₂",
+            "CO₂"
+          ],
+          "reported_tonnes_yr": 1200.0,
+          "source": "Proxy (v4)"
+        },
+        "water": {
+          "key_pollutants": [
+            "SS",
+            "DQO"
+          ],
+          "reported_m3_yr": 95000.0,
+          "source": "Proxy (v4)"
+        },
+        "noise": {
+          "estimated_db": 80.0
+        }
+      },
+      "mitigation": {
+        "reported_actions": [
+          "Monitoreo (si aplica)"
+        ]
+      },
+      "sanctions": {
+        "known_fines": []
+      },
+      "health": {
+        "evidence": []
+      },
+      "location": {
+        "address": "Nuevo León, México",
+        "lat": 25.7513,
+        "lng": -100.3194,
+        "impact_radius_km": 8.0
+      },
+      "contacts": {
+        "phone": "N/A",
+        "email": "N/A",
+        "website": "N/A"
+      },
+      "sources": [
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
+        "https://apps1.semarnat.gob.mx:8443/retc/",
+        "https://www.profepa.gob.mx"
+      ],
+      "score": 20,
+      "impact_level": "bajo",
+      "top10_private": false
+    },
+    {
+      "id": 64,
+      "name": "SIMEC Aceros Chihuahua",
+      "ownership": "privado",
+      "node_type": "empresa",
+      "region": "NOROESTE",
+      "state": "Chihuahua",
+      "category": "Siderurgia",
+      "sector": "metales/minería",
+      "what_produces": "Siderurgia",
+      "top10": false,
+      "data_quality": "proxy_v4",
+      "pollution": {
+        "air": {
+          "key_pollutants": [
+            "PM10",
+            "PM2.5",
+            "NOₓ",
+            "SO₂",
+            "CO₂"
+          ],
+          "reported_tonnes_yr": 1800.0,
+          "source": "Proxy (v4)"
+        },
+        "water": {
+          "key_pollutants": [
+            "SS",
+            "DQO"
+          ],
+          "reported_m3_yr": 280000.0,
+          "source": "Proxy (v4)"
+        },
+        "noise": {
+          "estimated_db": 84.0
+        }
+      },
+      "mitigation": {
+        "reported_actions": [
+          "Monitoreo (si aplica)"
+        ]
+      },
+      "sanctions": {
+        "known_fines": []
+      },
+      "health": {
+        "evidence": []
+      },
+      "location": {
+        "address": "Chihuahua, México",
+        "lat": 28.61,
+        "lng": -106.08,
+        "impact_radius_km": 8.0
+      },
+      "contacts": {
+        "phone": "N/A",
+        "email": "N/A",
+        "website": "N/A"
+      },
+      "sources": [
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
+        "https://apps1.semarnat.gob.mx:8443/retc/",
+        "https://www.profepa.gob.mx"
+      ],
+      "score": 26,
+      "impact_level": "bajo",
+      "top10_private": false
+    },
+    {
+      "id": 65,
+      "name": "Nemak Monterrey (proxy)",
+      "ownership": "privado",
+      "node_type": "empresa",
+      "region": "NORESTE",
+      "state": "Nuevo León",
+      "category": "Autopartes metal",
+      "sector": "metales/minería",
+      "what_produces": "Autopartes metal",
+      "top10": false,
+      "data_quality": "proxy_v4",
+      "pollution": {
+        "air": {
+          "key_pollutants": [
+            "PM10",
+            "PM2.5",
+            "NOₓ",
+            "SO₂",
+            "CO₂"
+          ],
+          "reported_tonnes_yr": 900.0,
+          "source": "Proxy (v4)"
+        },
+        "water": {
+          "key_pollutants": [
+            "SS",
+            "DQO"
+          ],
+          "reported_m3_yr": 120000.0,
+          "source": "Proxy (v4)"
+        },
+        "noise": {
+          "estimated_db": 78.0
+        }
+      },
+      "mitigation": {
+        "reported_actions": [
+          "Monitoreo (si aplica)"
+        ]
+      },
+      "sanctions": {
+        "known_fines": []
+      },
+      "health": {
+        "evidence": []
+      },
+      "location": {
+        "address": "Nuevo León, México",
+        "lat": 25.7,
+        "lng": -100.25,
+        "impact_radius_km": 8.0
+      },
+      "contacts": {
+        "phone": "N/A",
+        "email": "N/A",
+        "website": "N/A"
+      },
+      "sources": [
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
+        "https://apps1.semarnat.gob.mx:8443/retc/",
+        "https://www.profepa.gob.mx"
+      ],
+      "score": 17,
+      "impact_level": "bajo",
+      "top10_private": false
+    },
+    {
+      "id": 66,
+      "name": "Vitro Monterrey (proxy)",
+      "ownership": "privado",
+      "node_type": "empresa",
+      "region": "NORESTE",
+      "state": "Nuevo León",
+      "category": "Vidrio",
+      "sector": "manufactura",
+      "what_produces": "Vidrio",
+      "top10": false,
+      "data_quality": "proxy_v4",
+      "pollution": {
+        "air": {
+          "key_pollutants": [
+            "PM10",
+            "PM2.5",
+            "NOₓ",
+            "SO₂",
+            "CO₂"
+          ],
+          "reported_tonnes_yr": 950.0,
+          "source": "Proxy (v4)"
+        },
+        "water": {
+          "key_pollutants": [
+            "SS",
+            "DQO"
+          ],
+          "reported_m3_yr": 185000.0,
+          "source": "Proxy (v4)"
+        },
+        "noise": {
+          "estimated_db": 78.0
+        }
+      },
+      "mitigation": {
+        "reported_actions": [
+          "Monitoreo (si aplica)"
+        ]
+      },
+      "sanctions": {
+        "known_fines": []
+      },
+      "health": {
+        "evidence": []
+      },
+      "location": {
+        "address": "Nuevo León, México",
+        "lat": 25.69,
+        "lng": -100.3,
+        "impact_radius_km": 8.0
+      },
+      "contacts": {
+        "phone": "N/A",
+        "email": "N/A",
+        "website": "N/A"
+      },
+      "sources": [
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
+        "https://apps1.semarnat.gob.mx:8443/retc/",
+        "https://www.profepa.gob.mx"
+      ],
+      "score": 17,
+      "impact_level": "bajo",
+      "top10_private": false
+    },
+    {
+      "id": 67,
       "name": "Cluster Puebla cementero (Tecamachalco)",
       "ownership": "cluster",
       "node_type": "cluster",
@@ -6948,7 +4525,139 @@
       "top10_private": false
     },
     {
-      "id": 73,
+      "id": 70,
+      "name": "Cluster Tula–Apaxco–Atotonilco",
+      "ownership": "cluster",
+      "node_type": "cluster",
+      "region": "CENTRO",
+      "state": "Hidalgo/EdoMéx",
+      "category": "Cluster industrial",
+      "sector": "cluster",
+      "what_produces": "Cluster industrial",
+      "top10": true,
+      "data_quality": "proxy_v4",
+      "pollution": {
+        "air": {
+          "key_pollutants": [
+            "PM10",
+            "PM2.5",
+            "NOₓ",
+            "SO₂",
+            "CO₂"
+          ],
+          "reported_tonnes_yr": 9000.0,
+          "source": "Proxy (v4.1)"
+        },
+        "water": {
+          "key_pollutants": [
+            "SS",
+            "DQO"
+          ],
+          "reported_m3_yr": 5000000.0,
+          "source": "Proxy (v4.1)"
+        },
+        "noise": {
+          "estimated_db": 85.0
+        }
+      },
+      "mitigation": {
+        "reported_actions": [
+          "Refinar con SIINEM/INEM"
+        ]
+      },
+      "sanctions": {
+        "known_fines": []
+      },
+      "health": {
+        "evidence": []
+      },
+      "location": {
+        "address": "Hidalgo/EdoMéx, México",
+        "lat": 19.9914,
+        "lng": -99.1946,
+        "impact_radius_km": 25.0
+      },
+      "contacts": {
+        "phone": "N/A",
+        "email": "N/A",
+        "website": "N/A"
+      },
+      "sources": [
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php"
+      ],
+      "score": 98,
+      "impact_level": "muy_alto",
+      "top10_private": false
+    },
+    {
+      "id": 71,
+      "name": "Cluster Valle de México (Tlalnepantla)",
+      "ownership": "cluster",
+      "node_type": "cluster",
+      "region": "CENTRO",
+      "state": "EdoMéx/CDMX",
+      "category": "Cluster industrial",
+      "sector": "cluster",
+      "what_produces": "Cluster industrial",
+      "top10": false,
+      "data_quality": "proxy_v4",
+      "pollution": {
+        "air": {
+          "key_pollutants": [
+            "PM10",
+            "PM2.5",
+            "NOₓ",
+            "SO₂",
+            "CO₂"
+          ],
+          "reported_tonnes_yr": 6000.0,
+          "source": "Proxy (v4.1)"
+        },
+        "water": {
+          "key_pollutants": [
+            "SS",
+            "DQO"
+          ],
+          "reported_m3_yr": 800000.0,
+          "source": "Proxy (v4.1)"
+        },
+        "noise": {
+          "estimated_db": 78.0
+        }
+      },
+      "mitigation": {
+        "reported_actions": [
+          "Refinar con SIINEM/INEM"
+        ]
+      },
+      "sanctions": {
+        "known_fines": []
+      },
+      "health": {
+        "evidence": []
+      },
+      "location": {
+        "address": "EdoMéx/CDMX, México",
+        "lat": 19.5401,
+        "lng": -99.1954,
+        "impact_radius_km": 25.0
+      },
+      "contacts": {
+        "phone": "N/A",
+        "email": "N/A",
+        "website": "N/A"
+      },
+      "sources": [
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php"
+      ],
+      "score": 68,
+      "impact_level": "bajo",
+      "top10_private": false
+    },
+    {
+      "id": 72,
       "name": "Cluster Coatzacoalcos petroquímico",
       "ownership": "cluster",
       "node_type": "cluster",
@@ -6969,7 +4678,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 7000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -6977,7 +4686,7 @@
             "DQO"
           ],
           "reported_m3_yr": 1200000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 80.0
@@ -7006,16 +4715,15 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://www.reporteindigo.com/nacional/dano-ambiental-de-empresas-a-suelos-y-mares-avanza-en-mexico-20260202-0032.html"
       ],
       "score": 78,
       "impact_level": "muy_alto",
       "top10_private": false
     },
     {
-      "id": 74,
+      "id": 73,
       "name": "Cluster El Salto industrial",
       "ownership": "cluster",
       "node_type": "cluster",
@@ -7036,7 +4744,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 4000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -7044,7 +4752,7 @@
             "DQO"
           ],
           "reported_m3_yr": 500000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 78.0
@@ -7073,11 +4781,444 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 48,
+      "impact_level": "bajo",
+      "top10_private": false
+    },
+    {
+      "id": 74,
+      "name": "CEMEX Barrientos",
+      "ownership": "privado",
+      "node_type": "empresa",
+      "region": "CENTRO",
+      "state": "Estado de México",
+      "category": "Cementera",
+      "sector": "cemento",
+      "what_produces": "Cementera",
+      "top10": false,
+      "data_quality": "proxy_v4",
+      "pollution": {
+        "air": {
+          "key_pollutants": [
+            "PM10",
+            "PM2.5",
+            "NOₓ"
+          ],
+          "reported_tonnes_yr": 3800.0,
+          "source": "Proxy (v4)"
+        },
+        "water": {
+          "key_pollutants": [
+            "SS"
+          ],
+          "reported_m3_yr": 180000.0,
+          "source": "Proxy (v4)"
+        },
+        "noise": {
+          "estimated_db": 82.0
+        }
+      },
+      "mitigation": {
+        "reported_actions": []
+      },
+      "sanctions": {
+        "known_fines": []
+      },
+      "health": {
+        "evidence": []
+      },
+      "location": {
+        "address": "Estado de México, México",
+        "lat": 19.55,
+        "lng": -99.2,
+        "impact_radius_km": 10.0
+      },
+      "contacts": {
+        "phone": "N/A",
+        "email": "N/A",
+        "website": "N/A"
+      },
+      "sources": [
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
+      ],
+      "notes": "Añadido por sanity-check Valle de México",
+      "score": 46,
+      "impact_level": "bajo",
+      "top10_private": true
+    },
+    {
+      "id": 75,
+      "name": "Cluster Minero Feldespato Puebla",
+      "ownership": "privado",
+      "node_type": "cluster",
+      "region": "CENTRO",
+      "state": "Puebla",
+      "category": "Minería no metálica (Feldespato)",
+      "sector": "minería",
+      "what_produces": "Minería no metálica (Feldespato)",
+      "top10": false,
+      "data_quality": "proxy_v4",
+      "pollution": {
+        "air": {
+          "key_pollutants": [
+            "PM10",
+            "PM2.5",
+            "NOₓ"
+          ],
+          "reported_tonnes_yr": 2500.0,
+          "source": "Proxy (v4)"
+        },
+        "water": {
+          "key_pollutants": [
+            "SS"
+          ],
+          "reported_m3_yr": 600000.0,
+          "source": "Proxy (v4)"
+        },
+        "noise": {
+          "estimated_db": 76.0
+        }
+      },
+      "mitigation": {
+        "reported_actions": []
+      },
+      "sanctions": {
+        "known_fines": []
+      },
+      "health": {
+        "evidence": []
+      },
+      "location": {
+        "address": "Puebla, México",
+        "lat": 19.0,
+        "lng": -97.9,
+        "impact_radius_km": 20.0
+      },
+      "contacts": {
+        "phone": "N/A",
+        "email": "N/A",
+        "website": "N/A"
+      },
+      "sources": [
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
+      ],
+      "notes": "Cluster proxy para minas de feldespato",
+      "score": 33,
+      "impact_level": "bajo",
+      "top10_private": false
+    },
+    {
+      "id": 76,
+      "name": "Cementera Media Hidalgo",
+      "ownership": "privado",
+      "node_type": "empresa",
+      "region": "CENTRO",
+      "state": "Hidalgo",
+      "category": "Cementera",
+      "sector": "cemento",
+      "what_produces": "Cementera",
+      "top10": false,
+      "data_quality": "proxy_v4",
+      "pollution": {
+        "air": {
+          "key_pollutants": [
+            "PM10",
+            "PM2.5",
+            "NOₓ"
+          ],
+          "reported_tonnes_yr": 2200.0,
+          "source": "Proxy (v4)"
+        },
+        "water": {
+          "key_pollutants": [
+            "SS"
+          ],
+          "reported_m3_yr": 140000.0,
+          "source": "Proxy (v4)"
+        },
+        "noise": {
+          "estimated_db": 78.0
+        }
+      },
+      "mitigation": {
+        "reported_actions": []
+      },
+      "sanctions": {
+        "known_fines": []
+      },
+      "health": {
+        "evidence": []
+      },
+      "location": {
+        "address": "Hidalgo, México",
+        "lat": 20.1,
+        "lng": -98.8,
+        "impact_radius_km": 8.0
+      },
+      "contacts": {
+        "phone": "N/A",
+        "email": "N/A",
+        "website": "N/A"
+      },
+      "sources": [
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
+      ],
+      "notes": "Cementera media (proxy)",
+      "score": 30,
+      "impact_level": "bajo",
+      "top10_private": false
+    },
+    {
+      "id": 77,
+      "name": "Cementera Media Puebla",
+      "ownership": "privado",
+      "node_type": "empresa",
+      "region": "CENTRO",
+      "state": "Puebla",
+      "category": "Cementera",
+      "sector": "cemento",
+      "what_produces": "Cementera",
+      "top10": false,
+      "data_quality": "proxy_v4",
+      "pollution": {
+        "air": {
+          "key_pollutants": [
+            "PM10",
+            "PM2.5",
+            "NOₓ"
+          ],
+          "reported_tonnes_yr": 2200.0,
+          "source": "Proxy (v4)"
+        },
+        "water": {
+          "key_pollutants": [
+            "SS"
+          ],
+          "reported_m3_yr": 140000.0,
+          "source": "Proxy (v4)"
+        },
+        "noise": {
+          "estimated_db": 78.0
+        }
+      },
+      "mitigation": {
+        "reported_actions": []
+      },
+      "sanctions": {
+        "known_fines": []
+      },
+      "health": {
+        "evidence": []
+      },
+      "location": {
+        "address": "Puebla, México",
+        "lat": 19.02,
+        "lng": -98.0,
+        "impact_radius_km": 8.0
+      },
+      "contacts": {
+        "phone": "N/A",
+        "email": "N/A",
+        "website": "N/A"
+      },
+      "sources": [
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
+      ],
+      "notes": "Cementera media (proxy)",
+      "score": 30,
+      "impact_level": "bajo",
+      "top10_private": false
+    },
+    {
+      "id": 78,
+      "name": "Cementera Media Querétaro",
+      "ownership": "privado",
+      "node_type": "empresa",
+      "region": "CENTRO",
+      "state": "Querétaro",
+      "category": "Cementera",
+      "sector": "cemento",
+      "what_produces": "Cementera",
+      "top10": false,
+      "data_quality": "proxy_v4",
+      "pollution": {
+        "air": {
+          "key_pollutants": [
+            "PM10",
+            "PM2.5",
+            "NOₓ"
+          ],
+          "reported_tonnes_yr": 2200.0,
+          "source": "Proxy (v4)"
+        },
+        "water": {
+          "key_pollutants": [
+            "SS"
+          ],
+          "reported_m3_yr": 140000.0,
+          "source": "Proxy (v4)"
+        },
+        "noise": {
+          "estimated_db": 78.0
+        }
+      },
+      "mitigation": {
+        "reported_actions": []
+      },
+      "sanctions": {
+        "known_fines": []
+      },
+      "health": {
+        "evidence": []
+      },
+      "location": {
+        "address": "Querétaro, México",
+        "lat": 20.6,
+        "lng": -100.4,
+        "impact_radius_km": 8.0
+      },
+      "contacts": {
+        "phone": "N/A",
+        "email": "N/A",
+        "website": "N/A"
+      },
+      "sources": [
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
+      ],
+      "notes": "Cementera media (proxy)",
+      "score": 30,
+      "impact_level": "bajo",
+      "top10_private": false
+    },
+    {
+      "id": 79,
+      "name": "Cementera Media Toluca",
+      "ownership": "privado",
+      "node_type": "empresa",
+      "region": "CENTRO",
+      "state": "Estado de México",
+      "category": "Cementera",
+      "sector": "cemento",
+      "what_produces": "Cementera",
+      "top10": false,
+      "data_quality": "proxy_v4",
+      "pollution": {
+        "air": {
+          "key_pollutants": [
+            "PM10",
+            "PM2.5",
+            "NOₓ"
+          ],
+          "reported_tonnes_yr": 2200.0,
+          "source": "Proxy (v4)"
+        },
+        "water": {
+          "key_pollutants": [
+            "SS"
+          ],
+          "reported_m3_yr": 140000.0,
+          "source": "Proxy (v4)"
+        },
+        "noise": {
+          "estimated_db": 78.0
+        }
+      },
+      "mitigation": {
+        "reported_actions": []
+      },
+      "sanctions": {
+        "known_fines": []
+      },
+      "health": {
+        "evidence": []
+      },
+      "location": {
+        "address": "Estado de México, México",
+        "lat": 19.28,
+        "lng": -99.65,
+        "impact_radius_km": 8.0
+      },
+      "contacts": {
+        "phone": "N/A",
+        "email": "N/A",
+        "website": "N/A"
+      },
+      "sources": [
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
+      ],
+      "notes": "Cementera media (proxy)",
+      "score": 30,
+      "impact_level": "bajo",
+      "top10_private": false
+    },
+    {
+      "id": 80,
+      "name": "Cementera Media Morelos",
+      "ownership": "privado",
+      "node_type": "empresa",
+      "region": "CENTRO",
+      "state": "Morelos",
+      "category": "Cementera",
+      "sector": "cemento",
+      "what_produces": "Cementera",
+      "top10": false,
+      "data_quality": "proxy_v4",
+      "pollution": {
+        "air": {
+          "key_pollutants": [
+            "PM10",
+            "PM2.5",
+            "NOₓ"
+          ],
+          "reported_tonnes_yr": 2200.0,
+          "source": "Proxy (v4)"
+        },
+        "water": {
+          "key_pollutants": [
+            "SS"
+          ],
+          "reported_m3_yr": 140000.0,
+          "source": "Proxy (v4)"
+        },
+        "noise": {
+          "estimated_db": 78.0
+        }
+      },
+      "mitigation": {
+        "reported_actions": []
+      },
+      "sanctions": {
+        "known_fines": []
+      },
+      "health": {
+        "evidence": []
+      },
+      "location": {
+        "address": "Morelos, México",
+        "lat": 18.92,
+        "lng": -99.23,
+        "impact_radius_km": 8.0
+      },
+      "contacts": {
+        "phone": "N/A",
+        "email": "N/A",
+        "website": "N/A"
+      },
+      "sources": [
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
+      ],
+      "notes": "Cementera media (proxy)",
+      "score": 30,
       "impact_level": "bajo",
       "top10_private": false
     }

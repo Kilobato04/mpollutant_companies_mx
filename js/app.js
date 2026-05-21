@@ -2,12 +2,12 @@ const COLREG={NORESTE:'#ef4444',NOROESTE:'#f97316',CENTRO:'#3b82f6','BAJÍO':'#8
 const OWN={publico:'#22c55e',privado:'#ef4444',cluster:'#38bdf8',mixto:'#a78bfa'};
 const fmt=n=>Number(n||0).toLocaleString('es-ES');
 const fmtMx=n=> (n===null||n===undefined)?'N/D':Number(n).toLocaleString('es-ES');
-const score=d=>Number(d.score??( (d.pollution?.air?.reported_tonnes_yr||0)/100 + (d.pollution?.noise?.estimated_db||0)/10 ));
+const score=d=>Number(d.score ?? ( (d.pollution?.air?.reported_tonnes_yr||0)/100 + (d.pollution?.noise?.estimated_db||0)/10 ));
 
 const map=L.map('map').setView([23.5,-102],5);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{maxZoom:18,attribution:'© OSM © Carto'}).addTo(map);
 
-let DATA=[],MK=[],CI=[],top10=false,top10p=false;
+let DATA=[], MK=[], CI=[], top10=false, top10p=false;
 
 function badge(o){
   const cls=o==='publico'?'pub':o==='privado'?'pri':o==='cluster'?'clu':'mix';
@@ -18,7 +18,7 @@ function badge(o){
 function finesBlock(d){
   const fines=d.sanctions?.known_fines||[];
   if(!fines.length) return `<div class="pps"><b>Multas:</b> N/D</div>`;
-  const rows=fines.slice(0,5).map(f=>`• ${f.year||'—'} · ${fmtMx(f.amount_mxn)} MXN · ${f.reason||''}`).join('<br>');
+  const rows=fines.slice(0,6).map(f=>`• ${f.year||'—'} · ${fmtMx(f.amount_mxn)} MXN · ${(f.reason||'').slice(0,140)}`).join('<br>');
   return `<div class="pps"><b>Multas:</b><br>${rows}</div>`;
 }
 
@@ -29,15 +29,20 @@ function popup(d){
   const s=Math.round(score(d));
   const top=(d.top10||d.top10_private)?`<span class="bad top">TOP</span>`:'';
   const pats=(d.pollution?.air?.key_pollutants||[]).slice(0,10).map(p=>`<span class="ppk">${p}</span>`).join('');
+  const tipo = (d.node_type==='cluster') ? 'Cluster regional' : 'Instalación puntual';
+  const note = d.notes ? `<div class="pps"><b>Nota:</b> ${d.notes}</div>` : '';
+
   return `
     <div class="pph">${d.name}</div>
     ${badge(o)}${top}${reg?`<span class="bad" style="background:${(COLREG[reg]||'#334155')}33;border:1px solid ${(COLREG[reg]||'#334155')}66;color:#fff">${reg}</span>`:''}
+    <div class="pps"><b>Tipo:</b> ${tipo}</div>
     <div class="pps"><b>Score:</b> <span style="color:${col};font-weight:900">${s}</span> · <b>Sector:</b> ${d.sector||'-'} · <b>Estado:</b> ${d.state||'-'}</div>
     <div class="pps"><b>Categoría:</b> ${d.category||'-'}<br><b>Qué produce:</b> ${d.what_produces||'-'}</div>
     <div class="pps"><b>Aire:</b> ${fmt(d.pollution?.air?.reported_tonnes_yr)} t/año<br>${pats}</div>
     <div class="pps"><b>Agua:</b> ${fmt(d.pollution?.water?.reported_m3_yr)} m³/año</div>
     <div class="pps"><b>Ruido:</b> ${d.pollution?.noise?.estimated_db||0} dB</div>
     ${finesBlock(d)}
+    ${note}
     <div class="pps" style="color:#94a3b8"><b>Calidad de datos:</b> ${d.data_quality||'n/a'}</div>
   `;
 }
@@ -89,23 +94,25 @@ function apply(){
   arr.forEach((d,i)=>{
     const o=d.ownership||'privado';
     const col=OWN[o]||'#94a3b8';
-    const isClu=d.node_type==='cluster';
+    const isClu=d.node_type==='cluster' || d.ownership==='cluster';
     const isTop=(d.top10||d.top10_private);
 
     const mk=L.circleMarker([d.location.lat,d.location.lng],{
       radius:isClu?18:(isTop?13:8),
       fillColor:col,
-      fillOpacity:isClu?.18:(isTop?.95:.8),
+      fillOpacity:isClu?0.18:(isTop?0.95:0.8),
       color:isTop?'#fbbf24':'#ffffff',
       weight:isTop?3:(isClu?2:1),
       dashArray:isClu?'6 6':null
     }).addTo(map);
 
     mk.bindPopup(popup(d),{maxWidth:420});
+    mk.on('click',()=>mk.openPopup());
+
     MK.push(mk);pm.push(mk);
 
-    const rkm=d.location.impact_radius_km|| (isClu?25:8);
-    const ci=L.circle([d.location.lat,d.location.lng],{radius:rkm*1000,fillColor:col,fillOpacity:isClu?.05:.03,color:col,weight:1,dashArray:'4 6'}).addTo(map);
+    const rkm=d.location.impact_radius_km || (isClu?25:8);
+    const ci=L.circle([d.location.lat,d.location.lng],{radius:rkm*1000,fillColor:col,fillOpacity:isClu?0.05:0.03,color:col,weight:1,dashArray:'4 6'}).addTo(map);
     CI.push(ci);
   });
 
@@ -116,7 +123,7 @@ function apply(){
       const m=pm[i];
       if(!m) return;
       map.flyTo(m.getLatLng(), arr[i].node_type==='cluster'?8:10, {duration:1});
-      setTimeout(()=>m.openPopup(), 1100);
+      setTimeout(()=>m.openPopup(), 900);
     });
   });
 }
@@ -142,7 +149,7 @@ function bind(){
     document.getElementById('own').value='';
     document.getElementById('reg').value='';
     document.getElementById('med').value='';
-    top10=false;top10p=false;
+    top10=false; top10p=false;
     document.getElementById('top10').classList.remove('active');
     document.getElementById('top10p').classList.remove('active');
     map.setView([23.5,-102],5);
@@ -150,4 +157,8 @@ function bind(){
   });
 }
 
-fetch('data/empresas.json').then(r=>r.json()).then(j=>{DATA=j.empresas||[];bind();apply();}).catch(e=>console.error(e));
+fetch('data/empresas.json').then(r=>r.json()).then(j=>{
+  DATA=j.empresas||[];
+  bind();
+  apply();
+}).catch(e=>console.error(e));
