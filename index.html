@@ -1,43 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Mapa de Riesgos Ambientales – México</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-  <link rel="stylesheet" href="css/styles.css"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mapa Nacional de Riesgos Ambientales – México</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-
-  <div id="topbar">
-    <h1>🌎 Mapa de Riesgos Ambientales<span>ZMM · CDMX-EDOMEX · AMG</span></h1>
-    <div class="controls">
-      <input id="search" type="text" placeholder="Buscar empresa, sector…">
-      <select id="filterRegion">
-        <option value="">Todas las regiones</option>
-        <option value="ZMM">ZMM – Monterrey</option>
-        <option value="CDMX-EDOMEX">CDMX-EDOMEX</option>
-        <option value="AMG">AMG – Guadalajara</option>
-      </select>
-      <select id="filterMedium">
-        <option value="">Todos los medios</option>
-        <option value="air">💨 Aire</option>
-        <option value="water">💧 Agua</option>
-        <option value="noise">🔊 Ruido</option>
-      </select>
-      <button id="resetBtn">↺ Reset</button>
-    </div>
-  </div>
-
-  <div id="main">
-    <div id="sidebar">
-      <div id="stats"></div>
-      <div id="list"></div>
-    </div>
-    <div id="map"></div>
-  </div>
-
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="js/app.js"></script>
+<div id="topbar">
+ <div class="brand"><h1>🌎 Mapa Nacional de Riesgos Ambientales</h1><span class="sub">55 empresas · 19 estados · 6 regiones</span></div>
+ <div class="controls">
+  <input id="search" placeholder="Buscar empresa, estado…"/>
+  <select id="filterRegion"><option value="">Todas las regiones</option><option>NORESTE</option><option>NOROESTE</option><option>CENTRO</option><option>BAJÍO</option><option>SURESTE</option><option>PACÍFICO</option></select>
+  <select id="filterMedium"><option value="">Todos los medios</option><option value="air">🌬 Aire</option><option value="water">💧 Agua</option><option value="noise">🔊 Ruido</option></select>
+  <button id="top10Btn">⚠ Top 10</button>
+  <button id="resetBtn">↺ Reset</button>
+ </div>
+</div>
+<div id="main">
+ <aside id="sidebar"><div id="stats"></div><div id="list"></div></aside>
+ <div id="map"></div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

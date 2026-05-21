@@ -1,199 +1,86 @@
-/* ── Mapa de Riesgos Ambientales – app.js ────────────── */
-let DATA=[],markers=[],circles=[];
-const COL={ZMM:'#ef4444','CDMX-EDOMEX':'#3b82f6',AMG:'#22c55e'};
+const COL={NORESTE:'#ef4444',NOROESTE:'#f97316',CENTRO:'#3b82f6','BAJÍO':'#8b5cf6',SURESTE:'#06b6d4','PACÍFICO':'#22c55e'};
+const fmt=n=>n.toLocaleString('es-MX');
+const sc=d=>Math.round(d.pollution.air.reported_tonnes_yr/100+d.pollution.noise.estimated_db/10+d.sanctions.known_fines.length*20+d.health.evidence.length*15);
 
-/* Leaflet init */
-const map=L.map('map',{zoomControl:false}).setView([23,-102],5.5);
-L.control.zoom({position:'bottomright'}).addTo(map);
-L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
-  maxZoom:18,
-  attribution:'&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://osm.org/copyright">OSM</a>'
-}).addTo(map);
-
-/* helpers */
-const score=d=>{
-  let s=0;
-  s+=d.pollution.air.reported_tonnes_yr/100;
-  s+=d.pollution.noise.estimated_db/10;
-  s+=d.sanctions.known_fines.length*20;
-  s+=d.health.evidence.length*15;
-  return Math.round(s);
-};
-const fmt=n=>n.toLocaleString('es-MX',{style:'currency',currency:'MXN',maximumFractionDigits:0});
-const esc=s=>(s||'').replace(/</g,'&lt;');
-
-/* popup builder */
-function buildPopup(d){
-  const c=COL[d.region]||'#888';
-  let h=`<div class="pop-title" style="color:${c}">${esc(d.name)}</div>`;
-  h+=`<div class="pop-cat">${esc(d.category)} · ${esc(d.region)} · ${esc(d.state)}</div>`;
-
-  /* Qué produce */
-  h+=`<div class="pop-section"><h4>🏭 Qué produce</h4>${esc(d.what_produces)}</div>`;
-
-  /* Aire */
-  const a=d.pollution.air;
-  h+=`<div class="pop-section"><h4>💨 Contaminación – Aire</h4><div class="pop-pills">`;
-  a.key_pollutants.forEach(p=>{h+=`<span class="pill pill-air">${esc(p)}</span>`});
-  h+=`</div><b>${a.reported_tonnes_yr.toLocaleString('es-MX')}</b> ton/año <span style="color:var(--muted);font-size:.72rem">(${esc(a.source)})</span></div>`;
-
-  /* Agua */
-  const w=d.pollution.water;
-  h+=`<div class="pop-section"><h4>💧 Contaminación – Agua</h4><div class="pop-pills">`;
-  w.key_pollutants.forEach(p=>{h+=`<span class="pill pill-water">${esc(p)}</span>`});
-  h+=`</div><b>${w.reported_m3_yr.toLocaleString('es-MX')}</b> m³/año <span style="color:var(--muted);font-size:.72rem">(${esc(w.source)})</span></div>`;
-
-  /* Ruido */
-  h+=`<div class="pop-section"><h4>🔊 Ruido</h4>${d.pollution.noise.estimated_db} dB estimados</div>`;
-
-  /* Mitigación */
-  h+=`<div class="pop-section"><h4>🛡️ Mitigación</h4><ul class="pop-list">`;
-  d.mitigation.reported_actions.forEach(a=>{h+=`<li>${esc(a)}</li>`});
-  h+=`</ul></div>`;
-
-  /* Sanciones */
+function bPop(d){
+  const s=sc(d),col=COL[d.region]||'#888';
+  let h=`<div class="ph">${d.name}</div>`;
+  h+=`<span class="badge badge-${d.region}">${d.region}</span>`;
+  if(d.top10) h+=` <span class="badge badge-top10">⚠ TOP 10</span>`;
+  h+=` <span style="float:right;background:${col};color:#fff;padding:2px 8px;border-radius:10px;font-size:.7rem">Score ${s}</span>`;
+  h+=`<div class="ps"><h4>🏭 ${d.category}</h4><p>${d.what_produces}</p></div>`;
+  h+=`<div class="ps"><h4>🌬 Contaminación Aire</h4><p>${d.pollution.air.key_pollutants.map(p=>'<span class="pill">'+p+'</span>').join('')}</p><p><b>${fmt(d.pollution.air.reported_tonnes_yr)}</b> t/año</p></div>`;
+  h+=`<div class="ps"><h4>💧 Contaminación Agua</h4><p>${d.pollution.water.key_pollutants.map(p=>'<span class="pill">'+p+'</span>').join('')}</p><p><b>${fmt(d.pollution.water.reported_m3_yr)}</b> m³/año</p></div>`;
+  h+=`<div class="ps"><h4>🔊 Ruido</h4><p><b>${d.pollution.noise.estimated_db}</b> dB</p></div>`;
+  h+=`<div class="ps"><h4>🛡 Mitigación</h4><ul>${d.mitigation.reported_actions.map(a=>'<li>'+a+'</li>').join('')}</ul></div>`;
   if(d.sanctions.known_fines.length){
-    h+=`<div class="pop-section"><h4>⚖️ Sanciones</h4>`;
-    d.sanctions.known_fines.forEach(f=>{
-      h+=`<div class="pop-fine"><b>${f.year}</b> — ${fmt(f.amount_mxn)}<br>${esc(f.reason)}<br><span style="color:var(--muted);font-size:.7rem">${esc(f.source)}</span></div>`;
-    });
+    h+=`<div class="ps"><h4>⚖ Sanciones (${d.sanctions.known_fines.length})</h4>`;
+    d.sanctions.known_fines.forEach(f=>{h+=`<div class="fi"><b>${f.year}</b> — $${fmt(f.amount_mxn)} MXN<br>${f.reason}</div>`;});
     h+=`</div>`;
   }
-
-  /* Salud */
   if(d.health.evidence.length){
-    h+=`<div class="pop-section"><h4>🏥 Evidencia de Salud</h4>`;
-    d.health.evidence.forEach(e=>{
-      const cc=e.confidence==='alta'?'conf-alta':e.confidence==='media'?'conf-media':'conf-baja';
-      h+=`<div class="pop-health"><span class="${cc}">[${e.confidence}]</span> <b>${esc(e.type)}</b><br>${esc(e.claim)}<br><i style="color:var(--muted)">${esc(e.scope)}</i>`;
-      if(e.source_url&&e.source_url!=='N/A') h+=`<br><a class="pop-link" href="${e.source_url}" target="_blank">📎 Fuente</a>`;
-      h+=`</div>`;
-    });
+    h+=`<div class="ps"><h4>🏥 Evidencia de Salud (${d.health.evidence.length})</h4>`;
+    d.health.evidence.forEach(e=>{h+=`<div class="hi"><b>[${e.type}]</b> ${e.claim}<br><i>Alcance: ${e.scope} · Confianza: ${e.confidence}</i></div>`;});
     h+=`</div>`;
   }
-
-  /* Contacto */
-  h+=`<div class="pop-section"><h4>📞 Contacto</h4>`;
-  if(d.contacts.phone&&!d.contacts.phone.startsWith('No ')) h+=`📱 <a class="pop-link" href="tel:${d.contacts.phone}">${esc(d.contacts.phone)}</a><br>`;
-  if(d.contacts.email&&d.contacts.email!=='N/A') h+=`📧 <a class="pop-link" href="mailto:${d.contacts.email}">${esc(d.contacts.email)}</a><br>`;
-  if(d.contacts.website&&d.contacts.website!=='N/A') h+=`🌐 <a class="pop-link" href="${d.contacts.website}" target="_blank">${esc(d.contacts.website)}</a>`;
-  h+=`</div>`;
-
-  /* Ubicación */
-  h+=`<div class="pop-section"><h4>📍 Ubicación</h4>${esc(d.location.address)}<br>`;
-  h+=`<span style="color:var(--muted)">${d.location.lat}, ${d.location.lng}</span> · Radio de impacto: <b>${d.location.impact_radius_km} km</b></div>`;
-
-  /* Fuentes */
-  if(d.sources.length){
-    h+=`<div class="pop-section"><h4>📚 Fuentes</h4>`;
-    d.sources.forEach(s=>{h+=`<a class="pop-link" href="${s}" target="_blank">${esc(s)}</a><br>`});
-    h+=`</div>`;
+  if(d.contacts.phone!=='N/A'){
+    h+=`<div class="ps"><h4>📞 Contacto</h4>`;
+    h+=`<div class="cr">📱 ${d.contacts.phone}</div>`;
+    h+=`<div class="cr">✉ ${d.contacts.email}</div>`;
+    h+=`<div class="cr">🌐 <a href="${d.contacts.website}" target="_blank">${d.contacts.website}</a></div></div>`;
   }
+  h+=`<div class="ps"><h4>📍 Ubicación</h4><p>${d.location.address}<br>Radio impacto: <b>${d.location.impact_radius_km} km</b></p></div>`;
   return h;
 }
 
-/* sidebar card builder */
-function buildCard(d,idx){
-  const c=COL[d.region]||'#888';
-  const rCls=d.region==='ZMM'?'badge-zmm':d.region==='AMG'?'badge-amg':'badge-cdmx';
-  let h=`<div class="card" data-idx="${idx}">`;
-  h+=`<div class="c-name" style="color:${c}">${esc(d.name)}</div>`;
-  h+=`<div class="c-meta"><span class="badge ${rCls}">${d.region}</span>`;
-  h+=`<span>${esc(d.category)}</span>`;
-  h+=`<span class="badge badge-score">⚠ ${score(d)}</span></div>`;
-  h+=`<div>`;
-  h+=`<span class="pill pill-air">💨 ${d.pollution.air.reported_tonnes_yr.toLocaleString('es-MX')} t</span>`;
-  h+=`<span class="pill pill-water">💧 ${d.pollution.water.reported_m3_yr.toLocaleString('es-MX')} m³</span>`;
-  h+=`<span class="pill pill-noise">🔊 ${d.pollution.noise.estimated_db} dB</span>`;
-  h+=`</div></div>`;
+function bCard(d,i){
+  const s=sc(d),col=COL[d.region]||'#888';
+  let h=`<div class="card" data-i="${i}" style="border-left-color:${col}"><span class="card-sc">${s}</span>`;
+  h+=`<div class="card-t">${d.name}</div><div class="card-s"><span class="badge badge-${d.region}">${d.region}</span>`;
+  if(d.top10) h+=`<span class="badge badge-top10">⚠</span>`;
+  h+=` ${d.state} · ${d.category}</div></div>`;
   return h;
 }
 
-/* filter logic */
-function applyFilters(){
+const map=L.map('map',{zoomControl:true}).setView([23.5,-102],5);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{attribution:'© CartoDB © OSM',maxZoom:18}).addTo(map);
+
+let DATA=[],MK=[],CI=[],t10=false;
+
+function go(){
   const q=document.getElementById('search').value.toLowerCase();
-  const reg=document.getElementById('filterRegion').value;
-  const med=document.getElementById('filterMedium').value;
-
-  let filtered=DATA.filter(d=>{
-    if(q){
-      const hay=(d.name+d.category+d.state+d.what_produces).toLowerCase().includes(q);
-      if(!hay) return false;
-    }
-    if(reg&&d.region!==reg) return false;
-    if(med==='air' && d.pollution.air.reported_tonnes_yr===0) return false;
-    if(med==='water' && d.pollution.water.reported_m3_yr===0) return false;
-    if(med==='noise' && d.pollution.noise.estimated_db===0) return false;
+  const rg=document.getElementById('filterRegion').value;
+  const md=document.getElementById('filterMedium').value;
+  MK.forEach(m=>map.removeLayer(m));CI.forEach(c=>map.removeLayer(c));MK=[];CI=[];
+  let F=DATA.filter(d=>{
+    if(t10&&!d.top10) return false;
+    if(rg&&d.region!==rg) return false;
+    if(q&&!(d.name+d.state+d.category+d.what_produces+d.region).toLowerCase().includes(q)) return false;
+    if(md==='air'&&d.pollution.air.reported_tonnes_yr<100) return false;
+    if(md==='water'&&d.pollution.water.reported_m3_yr<10000) return false;
+    if(md==='noise'&&d.pollution.noise.estimated_db<70) return false;
     return true;
+  }).sort((a,b)=>sc(b)-sc(a));
+  const PM=[];
+  F.forEach((d,i)=>{
+    const col=COL[d.region]||'#888',isT=d.top10;
+    const mk=L.circleMarker([d.location.lat,d.location.lng],{radius:isT?13:8,fillColor:col,fillOpacity:isT?.95:.8,color:isT?'#fbbf24':'#fff',weight:isT?3:1}).addTo(map);
+    mk.bindPopup(bPop(d),{maxWidth:380,maxHeight:440});
+    MK.push(mk);PM.push(mk);
+    const ci=L.circle([d.location.lat,d.location.lng],{radius:d.location.impact_radius_km*1000,fillColor:col,fillOpacity:.05,color:col,weight:1,dashArray:'4 6'}).addTo(map);
+    CI.push(ci);
   });
-  filtered.sort((a,b)=>score(b)-score(a));
-
-  /* stats */
-  const totalFines=filtered.reduce((s,d)=>s+d.sanctions.known_fines.reduce((a,f)=>a+f.amount_mxn,0),0);
-  const regions=new Set(filtered.map(d=>d.region)).size;
-  document.getElementById('stats').innerHTML=
-    `<span>🏭 ${filtered.length} empresas</span>`+
-    `<span>⚖️ ${fmt(totalFines)} en multas</span>`+
-    `<span>📍 ${regions} regiones</span>`;
-
-  /* sidebar cards */
-  const list=document.getElementById('list');
-  list.innerHTML='';
-  filtered.forEach((d,i)=>{
-    list.insertAdjacentHTML('beforeend',buildCard(d,DATA.indexOf(d)));
-  });
-
-  /* map markers visibility */
-  const idSet=new Set(filtered.map(d=>d.id));
-  markers.forEach((m,i)=>{
-    if(idSet.has(DATA[i].id)){if(!map.hasLayer(m))m.addTo(map);if(!map.hasLayer(circles[i]))circles[i].addTo(map)}
-    else{if(map.hasLayer(m))map.removeLayer(m);if(map.hasLayer(circles[i]))map.removeLayer(circles[i])}
-  });
-
-  /* card click → fly to marker */
-  list.querySelectorAll('.card').forEach(card=>{
-    card.addEventListener('click',()=>{
-      const idx=+card.dataset.idx;
-      const d=DATA[idx];
-      map.flyTo([d.location.lat,d.location.lng],13,{duration:1});
-      setTimeout(()=>markers[idx].openPopup(),600);
-    });
+  const tf=F.reduce((s,d)=>s+d.sanctions.known_fines.reduce((a,f)=>a+f.amount_mxn,0),0);
+  const st=new Set(F.map(d=>d.state)).size;
+  document.getElementById('stats').innerHTML=`<div><div class="sv">${F.length}</div><div class="sl">Empresas</div></div><div><div class="sv">$${(tf/1e6).toFixed(0)}M</div><div class="sl">Multas MXN</div></div><div><div class="sv">${st}</div><div class="sl">Estados</div></div>`;
+  document.getElementById('list').innerHTML=F.map((d,i)=>bCard(d,i)).join('');
+  document.querySelectorAll('.card').forEach(c=>{
+    c.addEventListener('click',()=>{const i=+c.dataset.i;map.flyTo(PM[i].getLatLng(),10,{duration:1});setTimeout(()=>PM[i].openPopup(),1100);});
   });
 }
-
-/* ── Init ─────────────────────────────────────────────── */
-fetch('./data/empresas.json')
-  .then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})
-  .then(data=>{
-    DATA=data;
-    data.forEach((d,i)=>{
-      const c=COL[d.region]||'#888';
-      const mk=L.circleMarker([d.location.lat,d.location.lng],{
-        radius:8,fillColor:c,color:'#fff',weight:1.5,fillOpacity:.85
-      }).bindPopup(buildPopup(d),{maxWidth:400,maxHeight:500});
-      markers.push(mk);
-
-      const ci=L.circle([d.location.lat,d.location.lng],{
-        radius:d.location.impact_radius_km*1000,
-        color:c,fillColor:c,fillOpacity:.08,weight:1,opacity:.3
-      });
-      circles.push(ci);
-    });
-
-    applyFilters();
-
-    document.getElementById('search').addEventListener('input',applyFilters);
-    document.getElementById('filterRegion').addEventListener('change',applyFilters);
-    document.getElementById('filterMedium').addEventListener('change',applyFilters);
-    document.getElementById('resetBtn').addEventListener('click',()=>{
-      document.getElementById('search').value='';
-      document.getElementById('filterRegion').value='';
-      document.getElementById('filterMedium').value='';
-      applyFilters();
-      map.flyTo([23,-102],5.5,{duration:.8});
-    });
-  })
-  .catch(e=>{
-    document.getElementById('list').innerHTML=`<p style="padding:20px;color:#f87171">Error cargando datos: ${e.message}<br>Asegúrate de que <code>data/empresas.json</code> exista.</p>`;
-    console.error(e);
-  });
+document.getElementById('search').addEventListener('input',go);
+document.getElementById('filterRegion').addEventListener('change',go);
+document.getElementById('filterMedium').addEventListener('change',go);
+document.getElementById('top10Btn').addEventListener('click',function(){t10=!t10;this.classList.toggle('active',t10);go();});
+document.getElementById('resetBtn').addEventListener('click',()=>{document.getElementById('search').value='';document.getElementById('filterRegion').value='';document.getElementById('filterMedium').value='';t10=false;document.getElementById('top10Btn').classList.remove('active');map.setView([23.5,-102],5);go();});
+fetch('./data/empresas.json').then(r=>r.json()).then(d=>{DATA=d;go();}).catch(e=>console.error('Error:',e));
