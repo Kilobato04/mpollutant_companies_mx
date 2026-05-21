@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "4.0",
-    "note": "V4 limpio para deploy. Valores de emisiones/agua/ruido son proxies para ranking UI; usar data_quality.",
+    "version": "4.1",
+    "note": "V4.1 deploy limpio. Incluye ownership y esquema de multas (amount_mxn). Valores de contaminación son proxy salvo data_quality != proxy_v4.",
     "filters": [
       "ownership",
       "region",
@@ -33,7 +33,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 28000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -41,7 +41,7 @@
             "DQO"
           ],
           "reported_m3_yr": 2800000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 90.0
@@ -70,9 +70,8 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 289,
       "impact_level": "muy_alto",
@@ -100,7 +99,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 12500.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -108,7 +107,7 @@
             "DQO"
           ],
           "reported_m3_yr": 1400000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 88.0
@@ -137,9 +136,9 @@
         "website": "N/A"
       },
       "sources": [
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
         "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://abcnoticias.mx/local/2024/3/13/semarnat-calcula-que-ternium-cemex-registran-mayores-emisiones-que-refineria-211646.html"
       ],
       "score": 134,
       "impact_level": "muy_alto",
@@ -167,7 +166,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 9800.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -175,7 +174,7 @@
             "DQO"
           ],
           "reported_m3_yr": 1100000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 86.0
@@ -204,9 +203,8 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 107,
       "impact_level": "muy_alto",
@@ -234,7 +232,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 8200.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -242,7 +240,7 @@
             "DQO"
           ],
           "reported_m3_yr": 980000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 84.0
@@ -271,9 +269,8 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 90,
       "impact_level": "medio",
@@ -301,7 +298,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 7500.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -309,7 +306,7 @@
             "DQO"
           ],
           "reported_m3_yr": 850000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 82.0
@@ -338,9 +335,8 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 83,
       "impact_level": "bajo",
@@ -368,7 +364,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 6800.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -376,7 +372,7 @@
             "DQO"
           ],
           "reported_m3_yr": 780000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 83.0
@@ -405,9 +401,8 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 76,
       "impact_level": "bajo",
@@ -424,7 +419,7 @@
       "sector": "energía",
       "what_produces": "Refinería",
       "top10": false,
-      "data_quality": "proxy_v4",
+      "data_quality": "pendiente_retc_asea",
       "pollution": {
         "air": {
           "key_pollutants": [
@@ -435,7 +430,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 3200.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -443,7 +438,7 @@
             "DQO"
           ],
           "reported_m3_yr": 450000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 78.0
@@ -455,7 +450,14 @@
         ]
       },
       "sanctions": {
-        "known_fines": []
+        "known_fines": [
+          {
+            "year": null,
+            "amount_mxn": null,
+            "reason": "Referencia a incidentes/daño ambiental en bases consultadas por medios; verificar en ASEA/Inventario de sitios contaminados/RETC",
+            "source": "Greenpeace/Reporte Índigo"
+          }
+        ]
       },
       "health": {
         "evidence": []
@@ -472,9 +474,8 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 40,
       "impact_level": "bajo",
@@ -502,7 +503,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 24000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -510,7 +511,7 @@
             "DQO"
           ],
           "reported_m3_yr": 8500000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 92.0
@@ -539,9 +540,8 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 249,
       "impact_level": "muy_alto",
@@ -569,7 +569,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 22000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -577,7 +577,7 @@
             "DQO"
           ],
           "reported_m3_yr": 5200000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 92.0
@@ -606,9 +606,8 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 229,
       "impact_level": "muy_alto",
@@ -636,7 +635,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 18000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -644,7 +643,7 @@
             "DQO"
           ],
           "reported_m3_yr": 4200000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 88.0
@@ -673,9 +672,8 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 189,
       "impact_level": "muy_alto",
@@ -703,7 +701,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 12000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -711,7 +709,7 @@
             "DQO"
           ],
           "reported_m3_yr": 3100000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 86.0
@@ -740,9 +738,8 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 129,
       "impact_level": "medio",
@@ -770,7 +767,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 4800.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -778,7 +775,7 @@
             "DQO"
           ],
           "reported_m3_yr": 2800000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 82.0
@@ -807,9 +804,8 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 56,
       "impact_level": "bajo",
@@ -837,7 +833,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 5500.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -845,7 +841,7 @@
             "DQO"
           ],
           "reported_m3_yr": 1800000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 80.0
@@ -874,9 +870,8 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 63,
       "impact_level": "bajo",
@@ -904,7 +899,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 3800.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -912,7 +907,7 @@
             "DQO"
           ],
           "reported_m3_yr": 1500000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 80.0
@@ -941,9 +936,8 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 46,
       "impact_level": "bajo",
@@ -971,7 +965,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 3500.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -979,7 +973,7 @@
             "DQO"
           ],
           "reported_m3_yr": 280000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 85.0
@@ -1008,9 +1002,8 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://abcnoticias.mx/local/2024/3/13/semarnat-calcula-que-ternium-cemex-registran-mayores-emisiones-que-refineria-211646.html"
       ],
       "score": 44,
       "impact_level": "bajo",
@@ -1038,7 +1031,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 3200.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -1046,7 +1039,7 @@
             "DQO"
           ],
           "reported_m3_yr": 210000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 82.0
@@ -1075,9 +1068,8 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 40,
       "impact_level": "bajo",
@@ -1105,7 +1097,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 4200.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -1113,7 +1105,7 @@
             "DQO"
           ],
           "reported_m3_yr": 180000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 84.0
@@ -1142,9 +1134,8 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 50,
       "impact_level": "bajo",
@@ -1172,7 +1163,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 2100.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -1180,7 +1171,7 @@
             "DQO"
           ],
           "reported_m3_yr": 120000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 79.0
@@ -1209,9 +1200,7 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php"
       ],
       "score": 29,
       "impact_level": "bajo",
@@ -1239,7 +1228,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 2800.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -1247,7 +1236,7 @@
             "DQO"
           ],
           "reported_m3_yr": 150000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 80.0
@@ -1276,9 +1265,7 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php"
       ],
       "score": 36,
       "impact_level": "bajo",
@@ -1306,7 +1293,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 3200.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -1314,7 +1301,7 @@
             "DQO"
           ],
           "reported_m3_yr": 210000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 82.0
@@ -1343,9 +1330,8 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 40,
       "impact_level": "bajo",
@@ -1353,140 +1339,6 @@
     },
     {
       "id": 21,
-      "name": "Cementos Cruz Azul (Hidalgo proxy)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "CENTRO",
-      "state": "Hidalgo",
-      "category": "Cementera",
-      "sector": "cemento",
-      "what_produces": "Cementera",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 2800.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 180000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 80.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Hidalgo, México",
-        "lat": 19.98,
-        "lng": -98.92,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 36,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 22,
-      "name": "CEMEX Planta Hidalgo (proxy)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "CENTRO",
-      "state": "Hidalgo",
-      "category": "Cementera",
-      "sector": "cemento",
-      "what_produces": "Cementera",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 3000.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 190000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 82.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Hidalgo, México",
-        "lat": 20.12,
-        "lng": -99.22,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 38,
-      "impact_level": "bajo",
-      "top10_private": true
-    },
-    {
-      "id": 23,
       "name": "Orbia (Mexichem) El Salto",
       "ownership": "privado",
       "node_type": "empresa",
@@ -1507,7 +1359,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 2800.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -1515,7 +1367,7 @@
             "DQO"
           ],
           "reported_m3_yr": 780000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 83.0
@@ -1544,16 +1396,15 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 36,
       "impact_level": "muy_alto",
-      "top10_private": false
+      "top10_private": true
     },
     {
-      "id": 24,
+      "id": 22,
       "name": "Braskem Idesa (Etileno XXI)",
       "ownership": "privado",
       "node_type": "empresa",
@@ -1574,7 +1425,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 2200.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -1582,7 +1433,7 @@
             "DQO"
           ],
           "reported_m3_yr": 580000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 78.0
@@ -1611,16 +1462,17 @@
         "website": "N/A"
       },
       "sources": [
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
         "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://www.greenpeace.org/mexico/informacion-prensa/61480/pemex-mas-siniestros-mas-contaminacion-menos-rendicion-de-cuentas/",
+        "https://www.reporteindigo.com/nacional/dano-ambiental-de-empresas-a-suelos-y-mares-avanza-en-mexico-20260202-0032.html"
       ],
       "score": 30,
       "impact_level": "bajo",
       "top10_private": false
     },
     {
-      "id": 25,
+      "id": 23,
       "name": "Innophos Coatzacoalcos",
       "ownership": "privado",
       "node_type": "empresa",
@@ -1641,7 +1493,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 1800.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -1649,7 +1501,7 @@
             "DQO"
           ],
           "reported_m3_yr": 450000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 80.0
@@ -1678,26 +1530,25 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 26,
       "impact_level": "bajo",
       "top10_private": false
     },
     {
-      "id": 26,
-      "name": "PEMEX Cangrejera (mixto proxy)",
-      "ownership": "mixto",
+      "id": 24,
+      "name": "Shell México (proxy)",
+      "ownership": "privado",
       "node_type": "empresa",
-      "region": "SURESTE",
-      "state": "Veracruz",
-      "category": "Petroquímica",
-      "sector": "química",
-      "what_produces": "Petroquímica",
-      "top10": true,
-      "data_quality": "proxy_v4",
+      "region": "CENTRO",
+      "state": "CDMX",
+      "category": "Comercialización combustibles",
+      "sector": "energía",
+      "what_produces": "Comercialización combustibles",
+      "top10": false,
+      "data_quality": "pendiente_retc_asea",
       "pollution": {
         "air": {
           "key_pollutants": [
@@ -1707,19 +1558,19 @@
             "SO₂",
             "CO₂"
           ],
-          "reported_tonnes_yr": 5500.0,
-          "source": "Proxy (v4)"
+          "reported_tonnes_yr": 500.0,
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
             "SS",
             "DQO"
           ],
-          "reported_m3_yr": 1800000.0,
-          "source": "Proxy (v4)"
+          "reported_m3_yr": 120000.0,
+          "source": "Proxy (v4.1)"
         },
         "noise": {
-          "estimated_db": 85.0
+          "estimated_db": 72.0
         }
       },
       "mitigation": {
@@ -1728,15 +1579,22 @@
         ]
       },
       "sanctions": {
-        "known_fines": []
+        "known_fines": [
+          {
+            "year": null,
+            "amount_mxn": null,
+            "reason": "Referencia a incidentes/daño ambiental en bases consultadas por medios; verificar en ASEA/Inventario de sitios contaminados/RETC",
+            "source": "Greenpeace/Reporte Índigo"
+          }
+        ]
       },
       "health": {
         "evidence": []
       },
       "location": {
-        "address": "Veracruz, México",
-        "lat": 18.14,
-        "lng": -94.42,
+        "address": "CDMX, México",
+        "lat": 19.4326,
+        "lng": -99.1332,
         "impact_radius_km": 8.0
       },
       "contacts": {
@@ -1745,16 +1603,88 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://www.greenpeace.org/mexico/informacion-prensa/61480/pemex-mas-siniestros-mas-contaminacion-menos-rendicion-de-cuentas/",
+        "https://www.reporteindigo.com/nacional/dano-ambiental-de-empresas-a-suelos-y-mares-avanza-en-mexico-20260202-0032.html"
       ],
-      "score": 64,
-      "impact_level": "muy_alto",
+      "score": 12,
+      "impact_level": "bajo",
       "top10_private": false
     },
     {
-      "id": 27,
+      "id": 25,
+      "name": "ExxonMobil Comercial México (proxy)",
+      "ownership": "privado",
+      "node_type": "empresa",
+      "region": "CENTRO",
+      "state": "CDMX",
+      "category": "Comercialización combustibles",
+      "sector": "energía",
+      "what_produces": "Comercialización combustibles",
+      "top10": false,
+      "data_quality": "pendiente_retc_asea",
+      "pollution": {
+        "air": {
+          "key_pollutants": [
+            "PM10",
+            "PM2.5",
+            "NOₓ",
+            "SO₂",
+            "CO₂"
+          ],
+          "reported_tonnes_yr": 500.0,
+          "source": "Proxy (v4.1)"
+        },
+        "water": {
+          "key_pollutants": [
+            "SS",
+            "DQO"
+          ],
+          "reported_m3_yr": 120000.0,
+          "source": "Proxy (v4.1)"
+        },
+        "noise": {
+          "estimated_db": 72.0
+        }
+      },
+      "mitigation": {
+        "reported_actions": [
+          "Monitoreo (si aplica)"
+        ]
+      },
+      "sanctions": {
+        "known_fines": [
+          {
+            "year": null,
+            "amount_mxn": null,
+            "reason": "Referencia a incidentes/daño ambiental en bases consultadas por medios; verificar en ASEA/Inventario de sitios contaminados/RETC",
+            "source": "Greenpeace/Reporte Índigo"
+          }
+        ]
+      },
+      "health": {
+        "evidence": []
+      },
+      "location": {
+        "address": "CDMX, México",
+        "lat": 19.4326,
+        "lng": -99.1332,
+        "impact_radius_km": 8.0
+      },
+      "contacts": {
+        "phone": "N/A",
+        "email": "N/A",
+        "website": "N/A"
+      },
+      "sources": [
+        "https://www.greenpeace.org/mexico/informacion-prensa/61480/pemex-mas-siniestros-mas-contaminacion-menos-rendicion-de-cuentas/",
+        "https://www.reporteindigo.com/nacional/dano-ambiental-de-empresas-a-suelos-y-mares-avanza-en-mexico-20260202-0032.html"
+      ],
+      "score": 12,
+      "impact_level": "bajo",
+      "top10_private": false
+    },
+    {
+      "id": 26,
       "name": "Peñoles Met-Mex Torreón",
       "ownership": "privado",
       "node_type": "empresa",
@@ -1775,7 +1705,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 3500.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -1783,7 +1713,7 @@
             "DQO"
           ],
           "reported_m3_yr": 420000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 82.0
@@ -1812,16 +1742,15 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 43,
       "impact_level": "muy_alto",
       "top10_private": true
     },
     {
-      "id": 28,
+      "id": 27,
       "name": "Grupo México Buenavista del Cobre",
       "ownership": "privado",
       "node_type": "empresa",
@@ -1842,7 +1771,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 2800.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -1850,7 +1779,7 @@
             "DQO"
           ],
           "reported_m3_yr": 1200000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 78.0
@@ -1879,16 +1808,15 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 36,
       "impact_level": "muy_alto",
       "top10_private": false
     },
     {
-      "id": 29,
+      "id": 28,
       "name": "Ternium Monterrey",
       "ownership": "privado",
       "node_type": "empresa",
@@ -1909,7 +1837,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 4800.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -1917,7 +1845,7 @@
             "DQO"
           ],
           "reported_m3_yr": 620000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 82.0
@@ -1946,16 +1874,15 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://abcnoticias.mx/local/2024/3/13/semarnat-calcula-que-ternium-cemex-registran-mayores-emisiones-que-refineria-211646.html"
       ],
       "score": 56,
       "impact_level": "bajo",
       "top10_private": true
     },
     {
-      "id": 30,
+      "id": 29,
       "name": "ArcelorMittal Lázaro Cárdenas",
       "ownership": "privado",
       "node_type": "empresa",
@@ -1976,7 +1903,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 4800.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -1984,7 +1911,7 @@
             "DQO"
           ],
           "reported_m3_yr": 920000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 85.0
@@ -2013,16 +1940,14 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php"
       ],
       "score": 56,
       "impact_level": "bajo",
       "top10_private": true
     },
     {
-      "id": 31,
+      "id": 30,
       "name": "AHMSA Monclova (proxy)",
       "ownership": "privado",
       "node_type": "empresa",
@@ -2032,7 +1957,7 @@
       "sector": "metales/minería",
       "what_produces": "Siderurgia",
       "top10": false,
-      "data_quality": "proxy_v4",
+      "data_quality": "pendiente_retc_asea",
       "pollution": {
         "air": {
           "key_pollutants": [
@@ -2043,7 +1968,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 5200.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -2051,7 +1976,7 @@
             "DQO"
           ],
           "reported_m3_yr": 1600000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 88.0
@@ -2063,7 +1988,14 @@
         ]
       },
       "sanctions": {
-        "known_fines": []
+        "known_fines": [
+          {
+            "year": null,
+            "amount_mxn": null,
+            "reason": "Referencia a incidentes/daño ambiental en bases consultadas por medios; verificar en ASEA/Inventario de sitios contaminados/RETC",
+            "source": "Greenpeace/Reporte Índigo"
+          }
+        ]
       },
       "health": {
         "evidence": []
@@ -2080,284 +2012,14 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php"
       ],
       "score": 61,
       "impact_level": "bajo",
       "top10_private": true
     },
     {
-      "id": 32,
-      "name": "Zinc Nacional Monterrey",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NORESTE",
-      "state": "Nuevo León",
-      "category": "Metalurgia",
-      "sector": "metales/minería",
-      "what_produces": "Metalurgia",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 1200.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 95000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 80.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Nuevo León, México",
-        "lat": 25.7513,
-        "lng": -100.3194,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 20,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 33,
-      "name": "SIMEC Aceros Chihuahua",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NOROESTE",
-      "state": "Chihuahua",
-      "category": "Siderurgia",
-      "sector": "metales/minería",
-      "what_produces": "Siderurgia",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 1800.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 280000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 84.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Chihuahua, México",
-        "lat": 28.61,
-        "lng": -106.08,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 26,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 34,
-      "name": "Nemak Monterrey (proxy)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NORESTE",
-      "state": "Nuevo León",
-      "category": "Autopartes metal",
-      "sector": "metales/minería",
-      "what_produces": "Autopartes metal",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 900.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 120000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 78.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Nuevo León, México",
-        "lat": 25.7,
-        "lng": -100.25,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 17,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 35,
-      "name": "Vitro Monterrey (proxy)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NORESTE",
-      "state": "Nuevo León",
-      "category": "Vidrio",
-      "sector": "manufactura",
-      "what_produces": "Vidrio",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 950.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 185000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 78.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Nuevo León, México",
-        "lat": 25.69,
-        "lng": -100.3,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 17,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 36,
+      "id": 31,
       "name": "Volkswagen Puebla",
       "ownership": "privado",
       "node_type": "empresa",
@@ -2378,7 +2040,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 1200.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -2386,7 +2048,7 @@
             "DQO"
           ],
           "reported_m3_yr": 420000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 80.0
@@ -2415,16 +2077,16 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://www.greenpeace.org/mexico/informacion-prensa/61480/pemex-mas-siniestros-mas-contaminacion-menos-rendicion-de-cuentas/",
+        "https://www.reporteindigo.com/nacional/dano-ambiental-de-empresas-a-suelos-y-mares-avanza-en-mexico-20260202-0032.html"
       ],
       "score": 20,
       "impact_level": "bajo",
       "top10_private": false
     },
     {
-      "id": 37,
+      "id": 32,
       "name": "Audi San José Chiapa",
       "ownership": "privado",
       "node_type": "empresa",
@@ -2445,7 +2107,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 800.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -2453,7 +2115,7 @@
             "DQO"
           ],
           "reported_m3_yr": 280000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 78.0
@@ -2482,26 +2144,24 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php"
       ],
       "score": 16,
       "impact_level": "bajo",
       "top10_private": false
     },
     {
-      "id": 38,
-      "name": "BMW San Luis Potosí",
+      "id": 33,
+      "name": "Kansas City Southern de México (KCSM) (proxy)",
       "ownership": "privado",
       "node_type": "empresa",
-      "region": "BAJÍO",
-      "state": "San Luis Potosí",
-      "category": "Automotriz",
-      "sector": "automotriz",
-      "what_produces": "Automotriz",
+      "region": "CENTRO",
+      "state": "CDMX",
+      "category": "Ferrocarril",
+      "sector": "logística",
+      "what_produces": "Ferrocarril",
       "top10": false,
-      "data_quality": "proxy_v4",
+      "data_quality": "pendiente_retc_asea",
       "pollution": {
         "air": {
           "key_pollutants": [
@@ -2511,209 +2171,8 @@
             "SO₂",
             "CO₂"
           ],
-          "reported_tonnes_yr": 420.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 150000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 76.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "San Luis Potosí, México",
-        "lat": 22.09,
-        "lng": -100.85,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 12,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 39,
-      "name": "Ford Chihuahua",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NOROESTE",
-      "state": "Chihuahua",
-      "category": "Automotriz",
-      "sector": "automotriz",
-      "what_produces": "Automotriz",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 680.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 95000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 78.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Chihuahua, México",
-        "lat": 28.7,
-        "lng": -106.12,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 15,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 40,
-      "name": "GM Silao (proxy)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "BAJÍO",
-      "state": "Guanajuato",
-      "category": "Automotriz",
-      "sector": "automotriz",
-      "what_produces": "Automotriz",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 700.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 140000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 78.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Guanajuato, México",
-        "lat": 20.94,
-        "lng": -101.43,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 15,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 41,
-      "name": "Nissan Aguascalientes (proxy)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "BAJÍO",
-      "state": "Aguascalientes",
-      "category": "Automotriz",
-      "sector": "automotriz",
-      "what_produces": "Automotriz",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 680.0,
-          "source": "Proxy (v4)"
+          "reported_tonnes_yr": 500.0,
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -2721,275 +2180,7 @@
             "DQO"
           ],
           "reported_m3_yr": 120000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 77.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Aguascalientes, México",
-        "lat": 21.88,
-        "lng": -102.29,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 14,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 42,
-      "name": "Toyota Guanajuato (proxy)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "BAJÍO",
-      "state": "Guanajuato",
-      "category": "Automotriz",
-      "sector": "automotriz",
-      "what_produces": "Automotriz",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 620.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 110000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 76.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Guanajuato, México",
-        "lat": 20.95,
-        "lng": -101.25,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 14,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 43,
-      "name": "Grupo Modelo CDMX",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "CENTRO",
-      "state": "CDMX",
-      "category": "Cervecera",
-      "sector": "alimentos/bebidas",
-      "what_produces": "Cervecera",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 800.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 350000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 76.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "CDMX, México",
-        "lat": 19.434,
-        "lng": -99.168,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 16,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 44,
-      "name": "Heineken Monterrey",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NORESTE",
-      "state": "Nuevo León",
-      "category": "Cervecera",
-      "sector": "alimentos/bebidas",
-      "what_produces": "Cervecera",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 950.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 250000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 76.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Nuevo León, México",
-        "lat": 25.687,
-        "lng": -100.316,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 17,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 45,
-      "name": "Nestlé Ocotlán",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "PACÍFICO",
-      "state": "Jalisco",
-      "category": "Alimentos",
-      "sector": "alimentos/bebidas",
-      "what_produces": "Alimentos",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 320.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 180000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 72.0
@@ -3001,15 +2192,22 @@
         ]
       },
       "sanctions": {
-        "known_fines": []
+        "known_fines": [
+          {
+            "year": null,
+            "amount_mxn": null,
+            "reason": "Referencia a incidentes/daño ambiental en bases consultadas por medios; verificar en ASEA/Inventario de sitios contaminados/RETC",
+            "source": "Greenpeace/Reporte Índigo"
+          }
+        ]
       },
       "health": {
         "evidence": []
       },
       "location": {
-        "address": "Jalisco, México",
-        "lat": 20.35,
-        "lng": -102.775,
+        "address": "CDMX, México",
+        "lat": 19.4326,
+        "lng": -99.1332,
         "impact_radius_km": 8.0
       },
       "contacts": {
@@ -3018,26 +2216,25 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://www.greenpeace.org/mexico/informacion-prensa/61480/pemex-mas-siniestros-mas-contaminacion-menos-rendicion-de-cuentas/",
+        "https://www.reporteindigo.com/nacional/dano-ambiental-de-empresas-a-suelos-y-mares-avanza-en-mexico-20260202-0032.html"
       ],
-      "score": 10,
+      "score": 12,
       "impact_level": "bajo",
       "top10_private": false
     },
     {
-      "id": 46,
-      "name": "P&G Vallejo",
+      "id": 34,
+      "name": "Ferrocarril Mexicano (Ferromex) (proxy)",
       "ownership": "privado",
       "node_type": "empresa",
       "region": "CENTRO",
       "state": "CDMX",
-      "category": "Consumo",
-      "sector": "otros",
-      "what_produces": "Consumo",
+      "category": "Ferrocarril",
+      "sector": "logística",
+      "what_produces": "Ferrocarril",
       "top10": false,
-      "data_quality": "proxy_v4",
+      "data_quality": "pendiente_retc_asea",
       "pollution": {
         "air": {
           "key_pollutants": [
@@ -3047,8 +2244,8 @@
             "SO₂",
             "CO₂"
           ],
-          "reported_tonnes_yr": 310.0,
-          "source": "Proxy (v4)"
+          "reported_tonnes_yr": 500.0,
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -3056,10 +2253,10 @@
             "DQO"
           ],
           "reported_m3_yr": 120000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
-          "estimated_db": 74.0
+          "estimated_db": 72.0
         }
       },
       "mitigation": {
@@ -3068,15 +2265,22 @@
         ]
       },
       "sanctions": {
-        "known_fines": []
+        "known_fines": [
+          {
+            "year": null,
+            "amount_mxn": null,
+            "reason": "Referencia a incidentes/daño ambiental en bases consultadas por medios; verificar en ASEA/Inventario de sitios contaminados/RETC",
+            "source": "Greenpeace/Reporte Índigo"
+          }
+        ]
       },
       "health": {
         "evidence": []
       },
       "location": {
         "address": "CDMX, México",
-        "lat": 19.49,
-        "lng": -99.16,
+        "lat": 19.4326,
+        "lng": -99.1332,
         "impact_radius_km": 8.0
       },
       "contacts": {
@@ -3085,26 +2289,24 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://www.reporteindigo.com/nacional/dano-ambiental-de-empresas-a-suelos-y-mares-avanza-en-mexico-20260202-0032.html"
       ],
-      "score": 10,
+      "score": 12,
       "impact_level": "bajo",
       "top10_private": false
     },
     {
-      "id": 47,
-      "name": "Bimbo Azcapotzalco (proxy)",
+      "id": 35,
+      "name": "Radiomóvil Dipsa (Telcel) (proxy)",
       "ownership": "privado",
       "node_type": "empresa",
       "region": "CENTRO",
       "state": "CDMX",
-      "category": "Alimentos",
-      "sector": "alimentos/bebidas",
-      "what_produces": "Alimentos",
+      "category": "Telecomunicaciones",
+      "sector": "telecom",
+      "what_produces": "Telecomunicaciones",
       "top10": false,
-      "data_quality": "proxy_v4",
+      "data_quality": "pendiente_retc_asea",
       "pollution": {
         "air": {
           "key_pollutants": [
@@ -3114,16 +2316,16 @@
             "SO₂",
             "CO₂"
           ],
-          "reported_tonnes_yr": 220.0,
-          "source": "Proxy (v4)"
+          "reported_tonnes_yr": 350.0,
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
             "SS",
             "DQO"
           ],
-          "reported_m3_yr": 90000.0,
-          "source": "Proxy (v4)"
+          "reported_m3_yr": 80000.0,
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 70.0
@@ -3135,15 +2337,22 @@
         ]
       },
       "sanctions": {
-        "known_fines": []
+        "known_fines": [
+          {
+            "year": null,
+            "amount_mxn": null,
+            "reason": "Referencia a incidentes/daño ambiental en bases consultadas por medios; verificar en ASEA/Inventario de sitios contaminados/RETC",
+            "source": "Greenpeace/Reporte Índigo"
+          }
+        ]
       },
       "health": {
         "evidence": []
       },
       "location": {
         "address": "CDMX, México",
-        "lat": 19.48,
-        "lng": -99.18,
+        "lat": 19.4326,
+        "lng": -99.1332,
         "impact_radius_km": 8.0
       },
       "contacts": {
@@ -3152,26 +2361,25 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://www.greenpeace.org/mexico/informacion-prensa/61480/pemex-mas-siniestros-mas-contaminacion-menos-rendicion-de-cuentas/",
+        "https://www.reporteindigo.com/nacional/dano-ambiental-de-empresas-a-suelos-y-mares-avanza-en-mexico-20260202-0032.html"
       ],
-      "score": 9,
+      "score": 10,
       "impact_level": "bajo",
       "top10_private": false
     },
     {
-      "id": 48,
-      "name": "Coca-Cola FEMSA (EdoMéx proxy)",
+      "id": 36,
+      "name": "Bristol-Myers Squibb de México (proxy)",
       "ownership": "privado",
       "node_type": "empresa",
       "region": "CENTRO",
-      "state": "Estado de México",
-      "category": "Bebidas",
-      "sector": "alimentos/bebidas",
-      "what_produces": "Bebidas",
+      "state": "CDMX",
+      "category": "Farmacéutica",
+      "sector": "farmacéutica",
+      "what_produces": "Farmacéutica",
       "top10": false,
-      "data_quality": "proxy_v4",
+      "data_quality": "pendiente_retc_asea",
       "pollution": {
         "air": {
           "key_pollutants": [
@@ -3181,16 +2389,89 @@
             "SO₂",
             "CO₂"
           ],
-          "reported_tonnes_yr": 260.0,
-          "source": "Proxy (v4)"
+          "reported_tonnes_yr": 350.0,
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
             "SS",
             "DQO"
           ],
-          "reported_m3_yr": 110000.0,
-          "source": "Proxy (v4)"
+          "reported_m3_yr": 80000.0,
+          "source": "Proxy (v4.1)"
+        },
+        "noise": {
+          "estimated_db": 70.0
+        }
+      },
+      "mitigation": {
+        "reported_actions": [
+          "Monitoreo (si aplica)"
+        ]
+      },
+      "sanctions": {
+        "known_fines": [
+          {
+            "year": null,
+            "amount_mxn": null,
+            "reason": "Referencia a incidentes/daño ambiental en bases consultadas por medios; verificar en ASEA/Inventario de sitios contaminados/RETC",
+            "source": "Greenpeace/Reporte Índigo"
+          }
+        ]
+      },
+      "health": {
+        "evidence": []
+      },
+      "location": {
+        "address": "CDMX, México",
+        "lat": 19.4326,
+        "lng": -99.1332,
+        "impact_radius_km": 8.0
+      },
+      "contacts": {
+        "phone": "N/A",
+        "email": "N/A",
+        "website": "N/A"
+      },
+      "sources": [
+        "https://www.greenpeace.org/mexico/informacion-prensa/61480/pemex-mas-siniestros-mas-contaminacion-menos-rendicion-de-cuentas/",
+        "https://www.reporteindigo.com/nacional/dano-ambiental-de-empresas-a-suelos-y-mares-avanza-en-mexico-20260202-0032.html"
+      ],
+      "score": 10,
+      "impact_level": "bajo",
+      "top10_private": false
+    },
+    {
+      "id": 37,
+      "name": "Bombardier Transportation México (proxy)",
+      "ownership": "privado",
+      "node_type": "empresa",
+      "region": "CENTRO",
+      "state": "Estado de México",
+      "category": "Transporte/industrial",
+      "sector": "manufactura",
+      "what_produces": "Transporte/industrial",
+      "top10": false,
+      "data_quality": "pendiente_retc_asea",
+      "pollution": {
+        "air": {
+          "key_pollutants": [
+            "PM10",
+            "PM2.5",
+            "NOₓ",
+            "SO₂",
+            "CO₂"
+          ],
+          "reported_tonnes_yr": 400.0,
+          "source": "Proxy (v4.1)"
+        },
+        "water": {
+          "key_pollutants": [
+            "SS",
+            "DQO"
+          ],
+          "reported_m3_yr": 90000.0,
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 72.0
@@ -3202,14 +2483,21 @@
         ]
       },
       "sanctions": {
-        "known_fines": []
+        "known_fines": [
+          {
+            "year": null,
+            "amount_mxn": null,
+            "reason": "Referencia a incidentes/daño ambiental en bases consultadas por medios; verificar en ASEA/Inventario de sitios contaminados/RETC",
+            "source": "Greenpeace/Reporte Índigo"
+          }
+        ]
       },
       "health": {
         "evidence": []
       },
       "location": {
         "address": "Estado de México, México",
-        "lat": 19.6,
+        "lat": 19.35,
         "lng": -99.06,
         "impact_radius_km": 8.0
       },
@@ -3219,748 +2507,10 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://www.greenpeace.org/mexico/informacion-prensa/61480/pemex-mas-siniestros-mas-contaminacion-menos-rendicion-de-cuentas/",
+        "https://www.reporteindigo.com/nacional/dano-ambiental-de-empresas-a-suelos-y-mares-avanza-en-mexico-20260202-0032.html"
       ],
-      "score": 10,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 49,
-      "name": "PepsiCo (EdoMéx proxy)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "CENTRO",
-      "state": "Estado de México",
-      "category": "Alimentos",
-      "sector": "alimentos/bebidas",
-      "what_produces": "Alimentos",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 210.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 95000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 71.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Estado de México, México",
-        "lat": 19.68,
-        "lng": -99.11,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 9,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 50,
-      "name": "Kimberly-Clark (EdoMéx proxy)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "CENTRO",
-      "state": "Estado de México",
-      "category": "Papel/consumo",
-      "sector": "otros",
-      "what_produces": "Papel/consumo",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 180.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 85000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 70.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Estado de México, México",
-        "lat": 19.55,
-        "lng": -99.25,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 9,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 51,
-      "name": "Gruma/Maseca (NL proxy)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NORESTE",
-      "state": "Nuevo León",
-      "category": "Alimentos",
-      "sector": "alimentos/bebidas",
-      "what_produces": "Alimentos",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 160.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 90000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 70.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Nuevo León, México",
-        "lat": 25.78,
-        "lng": -100.31,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 9,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 52,
-      "name": "Bachoco (Sonora proxy)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NOROESTE",
-      "state": "Sonora",
-      "category": "Alimentos",
-      "sector": "alimentos/bebidas",
-      "what_produces": "Alimentos",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 140.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 80000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 68.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Sonora, México",
-        "lat": 29.1,
-        "lng": -110.95,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 8,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 53,
-      "name": "Lala Torreón (proxy)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NORESTE",
-      "state": "Coahuila",
-      "category": "Alimentos",
-      "sector": "alimentos/bebidas",
-      "what_produces": "Alimentos",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 140.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 80000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 68.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Coahuila, México",
-        "lat": 25.54,
-        "lng": -103.45,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 8,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 54,
-      "name": "Hershey El Salto",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "PACÍFICO",
-      "state": "Jalisco",
-      "category": "Alimentos",
-      "sector": "alimentos/bebidas",
-      "what_produces": "Alimentos",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 150.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 68000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 72.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Jalisco, México",
-        "lat": 20.525,
-        "lng": -103.18,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 9,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 55,
-      "name": "Constellation Brands Nava",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NORESTE",
-      "state": "Coahuila",
-      "category": "Cervecera",
-      "sector": "alimentos/bebidas",
-      "what_produces": "Cervecera",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 550.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 420000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 74.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Coahuila, México",
-        "lat": 28.42,
-        "lng": -100.77,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 13,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 56,
-      "name": "Clarios García (baterías)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "NORESTE",
-      "state": "Nuevo León",
-      "category": "Reciclaje baterías",
-      "sector": "residuos",
-      "what_produces": "Reciclaje baterías",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 620.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 45000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 75.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Nuevo León, México",
-        "lat": 25.7611,
-        "lng": -100.5682,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 14,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 57,
-      "name": "Terminal Marítima Veracruz (mixto proxy)",
-      "ownership": "mixto",
-      "node_type": "empresa",
-      "region": "SURESTE",
-      "state": "Veracruz",
-      "category": "Logística",
-      "sector": "otros",
-      "what_produces": "Logística",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 200.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 120000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 70.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Veracruz, México",
-        "lat": 19.2,
-        "lng": -96.14,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 9,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 58,
-      "name": "Residuos peligrosos (proxy)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "CENTRO",
-      "state": "Estado de México",
-      "category": "Tratamiento residuos",
-      "sector": "residuos",
-      "what_produces": "Tratamiento residuos",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 450.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 70000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 72.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Estado de México, México",
-        "lat": 19.7,
-        "lng": -99.1,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 12,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 59,
-      "name": "Química corredor (proxy)",
-      "ownership": "privado",
-      "node_type": "empresa",
-      "region": "CENTRO",
-      "state": "Estado de México",
-      "category": "Química",
-      "sector": "química",
-      "what_produces": "Química",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 600.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 95000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 74.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Monitoreo (si aplica)"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Estado de México, México",
-        "lat": 19.62,
-        "lng": -99.05,
-        "impact_radius_km": 8.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 13,
+      "score": 11,
       "impact_level": "bajo",
       "top10_private": false
     },
@@ -3986,7 +2536,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 9000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -3994,7 +2544,7 @@
             "DQO"
           ],
           "reported_m3_yr": 5000000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 85.0
@@ -4024,8 +2574,7 @@
       },
       "sources": [
         "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php"
       ],
       "score": 98,
       "impact_level": "muy_alto",
@@ -4053,7 +2602,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 6000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -4061,7 +2610,7 @@
             "DQO"
           ],
           "reported_m3_yr": 800000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 78.0
@@ -4091,8 +2640,7 @@
       },
       "sources": [
         "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php"
       ],
       "score": 68,
       "impact_level": "bajo",
@@ -4100,73 +2648,6 @@
     },
     {
       "id": 72,
-      "name": "Cluster Puebla cementero (Tecamachalco)",
-      "ownership": "cluster",
-      "node_type": "cluster",
-      "region": "CENTRO",
-      "state": "Puebla",
-      "category": "Cluster industrial",
-      "sector": "cluster",
-      "what_produces": "Cluster industrial",
-      "top10": false,
-      "data_quality": "proxy_v4",
-      "pollution": {
-        "air": {
-          "key_pollutants": [
-            "PM10",
-            "PM2.5",
-            "NOₓ",
-            "SO₂",
-            "CO₂"
-          ],
-          "reported_tonnes_yr": 5000.0,
-          "source": "Proxy (v4)"
-        },
-        "water": {
-          "key_pollutants": [
-            "SS",
-            "DQO"
-          ],
-          "reported_m3_yr": 500000.0,
-          "source": "Proxy (v4)"
-        },
-        "noise": {
-          "estimated_db": 80.0
-        }
-      },
-      "mitigation": {
-        "reported_actions": [
-          "Refinar con SIINEM/INEM"
-        ]
-      },
-      "sanctions": {
-        "known_fines": []
-      },
-      "health": {
-        "evidence": []
-      },
-      "location": {
-        "address": "Puebla, México",
-        "lat": 18.8596,
-        "lng": -97.6402,
-        "impact_radius_km": 25.0
-      },
-      "contacts": {
-        "phone": "N/A",
-        "email": "N/A",
-        "website": "N/A"
-      },
-      "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
-      ],
-      "score": 58,
-      "impact_level": "bajo",
-      "top10_private": false
-    },
-    {
-      "id": 73,
       "name": "Cluster Coatzacoalcos petroquímico",
       "ownership": "cluster",
       "node_type": "cluster",
@@ -4187,7 +2668,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 7000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -4195,7 +2676,7 @@
             "DQO"
           ],
           "reported_m3_yr": 1200000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 80.0
@@ -4224,16 +2705,15 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://www.reporteindigo.com/nacional/dano-ambiental-de-empresas-a-suelos-y-mares-avanza-en-mexico-20260202-0032.html"
       ],
       "score": 78,
       "impact_level": "muy_alto",
       "top10_private": false
     },
     {
-      "id": 74,
+      "id": 73,
       "name": "Cluster El Salto industrial",
       "ownership": "cluster",
       "node_type": "cluster",
@@ -4254,7 +2734,7 @@
             "CO₂"
           ],
           "reported_tonnes_yr": 4000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "water": {
           "key_pollutants": [
@@ -4262,7 +2742,7 @@
             "DQO"
           ],
           "reported_m3_yr": 500000.0,
-          "source": "Proxy (v4)"
+          "source": "Proxy (v4.1)"
         },
         "noise": {
           "estimated_db": 78.0
@@ -4291,9 +2771,8 @@
         "website": "N/A"
       },
       "sources": [
-        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/",
-        "https://apps1.semarnat.gob.mx:8443/retc/",
-        "https://www.profepa.gob.mx"
+        "https://apps1.semarnat.gob.mx:8443/retc/retc/index.php",
+        "https://gisviewer.semarnat.gob.mx/wmaplicacion/inem/"
       ],
       "score": 48,
       "impact_level": "bajo",

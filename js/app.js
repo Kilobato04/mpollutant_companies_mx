@@ -1,6 +1,7 @@
 const COLREG={NORESTE:'#ef4444',NOROESTE:'#f97316',CENTRO:'#3b82f6','BAJÍO':'#8b5cf6',SURESTE:'#06b6d4','PACÍFICO':'#22c55e'};
 const OWN={publico:'#22c55e',privado:'#ef4444',cluster:'#38bdf8',mixto:'#a78bfa'};
 const fmt=n=>Number(n||0).toLocaleString('es-ES');
+const fmtMx=n=> (n===null||n===undefined)?'N/D':Number(n).toLocaleString('es-ES');
 const score=d=>Number(d.score??( (d.pollution?.air?.reported_tonnes_yr||0)/100 + (d.pollution?.noise?.estimated_db||0)/10 ));
 
 const map=L.map('map').setView([23.5,-102],5);
@@ -12,6 +13,13 @@ function badge(o){
   const cls=o==='publico'?'pub':o==='privado'?'pri':o==='cluster'?'clu':'mix';
   const txt=o==='publico'?'Público':o==='privado'?'Privado':o==='cluster'?'Cluster':'Mixto';
   return `<span class="bad ${cls}">${txt}</span>`;
+}
+
+function finesBlock(d){
+  const fines=d.sanctions?.known_fines||[];
+  if(!fines.length) return `<div class="pps"><b>Multas:</b> N/D</div>`;
+  const rows=fines.slice(0,5).map(f=>`• ${f.year||'—'} · ${fmtMx(f.amount_mxn)} MXN · ${f.reason||''}`).join('<br>');
+  return `<div class="pps"><b>Multas:</b><br>${rows}</div>`;
 }
 
 function popup(d){
@@ -29,6 +37,7 @@ function popup(d){
     <div class="pps"><b>Aire:</b> ${fmt(d.pollution?.air?.reported_tonnes_yr)} t/año<br>${pats}</div>
     <div class="pps"><b>Agua:</b> ${fmt(d.pollution?.water?.reported_m3_yr)} m³/año</div>
     <div class="pps"><b>Ruido:</b> ${d.pollution?.noise?.estimated_db||0} dB</div>
+    ${finesBlock(d)}
     <div class="pps" style="color:#94a3b8"><b>Calidad de datos:</b> ${d.data_quality||'n/a'}</div>
   `;
 }
@@ -65,7 +74,6 @@ function apply(){
     return true;
   }).sort((a,b)=>score(b)-score(a));
 
-  // stats
   const n=arr.length;
   const priv=arr.filter(d=>d.ownership==='privado').length;
   const pub=arr.filter(d=>d.ownership==='publico').length;
@@ -77,7 +85,6 @@ function apply(){
     <div><div class="stv">${clu}</div><div class="stl">Clusters</div></div>
   `;
 
-  // markers
   const pm=[];
   arr.forEach((d,i)=>{
     const o=d.ownership||'privado';
